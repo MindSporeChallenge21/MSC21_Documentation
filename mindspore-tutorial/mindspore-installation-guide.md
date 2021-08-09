@@ -45,7 +45,7 @@ make -j 12 && sudo make install -j 12
 ```
 
 {% hint style="info" %}
-Make, \(`-j` to run multiple make target at once because this process takes time!\)
+Make, `-j` to run multiple make target at once because this process takes time!
 {% endhint %}
 
 After make the GCC should be installed properly. Now we want to replace the GCC on the current machine with a new one\(7.3.0\) by using a soft link.
@@ -113,8 +113,18 @@ Python 3.7.5
 pip3 install jupyterlab
 ```
 
-\* if pip failed due to SSL problem please check References 1   
-\* if pip failed due to permissions use `--user` flag \(Futher problem on installation need to check if jupyter is added into `$PATH`\) or run the command as sudo. \(ie. `sudo pip3 install jupyterlab`\) 
+{% hint style="danger" %}
+if pip failed due to SSL problem please check References 1
+{% endhint %}
+
+{% hint style="danger" %}
+ if pip failed due to permissions   
+use `--user` flag 
+{% endhint %}
+
+{% hint style="danger" %}
+Futher problem on installation need to check if jupyter is added into `$PATH` or run the command as sudo. \(ie. `sudo pip3 install jupyterlab`\) 
+{% endhint %}
 
 Test the installation with
 
@@ -125,7 +135,11 @@ jupyter lab
 
 ## Installing MindSpore
 
-You can obtain the command of installing MindSpore from [https://mindspore.cn/install](https://mindspore.cn/install) Just be aware of the pip command, for `python3` use `pip3` for installation instead of `pip`. As an example a Ubuntu x86 chipset.
+You can obtain the command of installing MindSpore from [https://mindspore.cn/install](https://mindspore.cn/install) 
+
+Just be aware of the _**pip command.**_ For `python3` uses `pip3` for installation instead of `pip`. 
+
+As an example a Ubuntu x86 chipset:
 
 ```bash
 pip3 install https://ms-release.obs.cn-north-4.myhuaweicloud.com/1.2.0/MindSpore/cpu/ubuntu_x86/mindspore-1.2.1-cp37-cp37m-linux_x86_64.whl --trusted-host ms-release.obs.cn-north-4.myhuaweicloud.com
