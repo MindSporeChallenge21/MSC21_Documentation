@@ -126,8 +126,8 @@ Scoring will be given to the participants based on the following criteria:
 
 | **Judging Criteria** | **Weighting** |
 | :--- | ---: |
-| **Model Design** | 20% |
-| **Explainable AI Design** | 20% |
-| **Innovation and Commercialization Idea** | 40% |
-| **Presentation** | 20% |
+| Model Design | 20% |
+| Explainable AI Design | 20% |
+| Innovation and Commercialization Idea | 40% |
+| Presentation | 20% |
 
