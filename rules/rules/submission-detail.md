@@ -29,9 +29,12 @@ An **entry point file** needs to export specific functionalities for the evaluat
   <tbody>
     <tr>
       <td style="text-align:left">
-        <p>class <b>Net</b>(</p>
-        <p>mindspore.nn.Cell</p>
-        <p>)</p>
+        <p><code>class </code><b><code>Net</code></b><code>(</code>
+        </p>
+        <p><code>mindspore.nn.Cell</code>
+        </p>
+        <p><code>)</code>
+        </p>
       </td>
       <td style="text-align:left">
         <p>This class extends <b><code>mindspore.nn.Cell</code></b> which is the standard
@@ -57,10 +60,14 @@ An **entry point file** needs to export specific functionalities for the evaluat
       <td style="text-align:left">
         <p><em>(Optional)</em>
         </p>
-        <p>def <b>pre_process</b> (</p>
-        <p>image_id,</p>
-        <p>image</p>
-        <p>)</p>
+        <p><code>def </code><b><code>pre_process</code></b><code> (</code>
+        </p>
+        <p><code>  image_id,</code>
+        </p>
+        <p><code>  image</code>
+        </p>
+        <p><code>)</code>
+        </p>
       </td>
       <td style="text-align:left">
         <p>This function allows participants to <b>preprocess the dataset</b>, so
@@ -115,10 +122,14 @@ An **entry point file** needs to export specific functionalities for the evaluat
       <td style="text-align:left">
         <p><em>(Optional)</em>
         </p>
-        <p>def <b>post_process</b>(</p>
-        <p>image_id,</p>
-        <p>prediction</p>
-        <p>)</p>
+        <p><code>def </code><b><code>post_process</code></b><code>(</code>
+        </p>
+        <p><code>  image_id,</code>
+        </p>
+        <p><code>  prediction</code>
+        </p>
+        <p><code>)</code>
+        </p>
       </td>
       <td style="text-align:left">
         <p>This function allows participants to parse the output from the model,
@@ -161,12 +172,18 @@ An **entry point file** needs to export specific functionalities for the evaluat
       <td style="text-align:left">
         <p><em>(Optional)</em>
         </p>
-        <p>def <b>saliency_map</b>(</p>
-        <p>net,</p>
-        <p>image_id,</p>
-        <p>image,</p>
-        <p>predictions</p>
-        <p>)</p>
+        <p><code>def </code><b><code>saliency_map</code></b><code>(</code>
+        </p>
+        <p><code>  net,</code>
+        </p>
+        <p><code>  image_id,</code>
+        </p>
+        <p><code>  image,</code>
+        </p>
+        <p><code>  predictions</code>
+        </p>
+        <p><code>)</code>
+        </p>
       </td>
       <td style="text-align:left">
         <p>This function allows you to output a saliency map from the model with
