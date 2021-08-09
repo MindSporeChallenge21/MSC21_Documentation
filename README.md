@@ -44,10 +44,10 @@ description: >-
 
 ## 🖇 Useful Links
 
-* [Mindspore Tutorial](https://www.mindspore.cn/tutorials/en/r1.3/index.html)
+* [MindSpore Tutorial](https://www.mindspore.cn/tutorials/en/r1.3/index.html)
 * [ModelArts Tutorial](https://support.huaweicloud.com/en-us/qs-modelarts/modelarts_06_0001.html)
 * [OBS Tutorial](https://support.huaweicloud.com/intl/en-us/obs/index.html)
-* [Mindspore CV-related source code](https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/cv)
+* [MindSpore CV-related source code](https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/cv)
 
 
 
