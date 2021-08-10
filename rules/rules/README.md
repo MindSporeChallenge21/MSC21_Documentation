@@ -16,7 +16,7 @@ In this competition, pathological images labeled for the diagnosis of **peripher
 
 The bronchoscopy brushing methodology samples the patient's cells in the airways that lead to the lungs. We can obtain a pathology image by placing these samples under a microscope. A professional pathologist will view these images and identify the location and the classification of these cells. By automating this task, your participation could help to free an enormous amount of health professionals' time for pathological diagnosis.
 
-Contestants are expected to train their model with MindSpore to localise and classify cells on biopsy samples. The competition is the form of a standard Multi-label Object Detection Task. Huawei HKRC will provide Huawei Cloud with 5000 RMB credits that allow participants to train their model on the ModelArts equipped with the Ascend 910 NPU. Therefore, the automation of hyper-parameter tuning is highly encouraged.
+Contestants are expected to train their model with MindSpore to localise and classify cells on biopsy samples. The competition is the form of a standard Multi-label Object Detection Task. Participants are invited to utilize the AI computing power on the Huawei Cloud's ModelArts equipped with Huawei Ascend 910 NPUs for model training. 
 
 ### AGREEMENT
 
