@@ -20,23 +20,23 @@ The classification is as follow:
 
 ## 🏬 Datasets
 
-There are few versions of datasets. The primary dataset for user training and validation is **`dataset_1`**. This dataset contains 500 images.
+There are a few subsets of datasets. The primary dataset for user training and validation is **`dataset_1`**. This dataset contains 500 images.
 
 | **Dataset Name** | **Publicly Accessible** | **Description** |
 | :--- | :--- | :--- |
 | `dataset_1` | Yes | 500 data points for experimentation and model design. |
-| `dataset_2` | Restricted Access | User access through Huawei Cloud’s OBS, in ModelArts. |
+| `dataset_2` | Restricted Access | User access through Huawei Cloud’s [OBS](https://www.huaweicloud.com/en-us/product/obs.html), in [ModelArts](https://www.huaweicloud.com/intl/en-us/product/modelarts.html). |
 | `dataset_3` | No | For Accuracy task, and Explainable task \(with masks\). |
 
-## 1 Dataset 1
+## 1 Dataset Description  - `dataset_1`
 
 {% hint style="info" %}
-The data\(dataset\_1\) can be obtained through the OBS bucket from Huawei Cloud of the following URL.
+The data \(**`dataset_1`**\) can be obtained through the OBS bucket from Huawei Cloud of the following URL.
 
 [https:////](https://google.com)
 {% endhint %}
 
-In the **dataset\_1** there are 500 images and a CSV label file, and after unzipping the data you will receive the file structure as below:
+In the **dataset\_1** there are 500 images and a CSV label file in zipped format. The file structure for the datasets \(**`dataset_1`**\) are as below:
 
 * images
   * sample\_0001.bmp
@@ -44,6 +44,38 @@ In the **dataset\_1** there are 500 images and a CSV label file, and after unzip
   * …
   * sample\_0500.bmp
 * labels.csv
+
+A further description of the labels is in the [Dataset Description Section](data.md#dataset-description).
+
+## 2 Dataset Description  - `dataset_2`
+
+{% hint style="info" %}
+The data \(**`dataset_2`**\) can be obtained through ModelArts Moxing Framework only. From Huawei Cloud's OBS Bucket
+
+images: obs:////
+
+labels: obs://// 
+{% endhint %}
+
+In the **dataset\_2** there are 4000 images and a CSV label file. A further description of the labels is in the [Dataset Description Section](data.md#dataset-description). Since you can only access the dataset through **Moxing Framework** in **ModelArts**, we highly encourage participants to use the ModelArts for Training, because it is faster and more efficient for experimentation.
+
+{% embed url="https://support.huaweicloud.com/intl/en-us/moxing-devg-modelarts/modelarts\_11\_0003.html" caption="ModelArts Moxing Framework" %}
+
+{% hint style="info" %}
+Further information for ModelArts and Moxing is in the training and testing guidelines
+
+{% page-ref page="../../training-and-testing/traintest.md" %}
+{% endhint %}
+
+## 3 Dataset Description  - `dataset_3`
+
+The **`dataset_3`** is specifically for evaluation purposes. Each image will be passed into the user defined functions for evaluation purposes. 
+
+This dataset also contains a set of masks for selected datasets, these mask contains information regarding the important parts for recognising the labels. This masks will be compared against the saliency map produced in your code.
+
+## 🔢 Dataset Description
+
+The images are in `.bmp` format, which can be easily read by common python packages.
 
 The labels contain few columns namely:
 
@@ -55,16 +87,16 @@ The classes \(**`scc`**, **`ac`**, **`sclc`**, **`nsclc`**\) is the classificati
 
 Contestants are expected to design a model for finding the bounding boxes for the samples and classify the diagnosed cells.
 
-## 🔏 Data Privacy
+## 🔏 Dataset Terms and Conditions
 
 {% hint style="danger" %}
-1. The data published by LBP Medicine does not contain patients’ information.
-2. The Huawei Research Center does not own the copyright of the images and the labels.
-3. The use of the photos must abide by the Term of service of LBP Medicine.
+1. The data published by **LBP Medicine** does not contain patients’ information.
+2. The ownership and the copyright of the images and the labels are belong to **LBP Medicine**.
+3. The use of the photos must abide by the Term of service of **LBP Medicine**.
 4. The users of the photos accept full responsibility for the use of the dataset, including but not limited to the use of any copies of copyrighted images that they may create from the dataset.
 {% endhint %}
 
-By participating in this competition, users are allowed to access this dataset. There is some limitation in the use of this dataset. **The users may only use this dataset within the competition**. Within this competition, the definition of any code or software that accesses this dataset or reads this dataset in any manner must be part of the research or experimentation related to producing a model for this competition. The use of this dataset in the commercial context is prohibited.
+By participating in this competition, users are allowed to access this dataset. There is some limitation in the use of this dataset. **The users may only use this dataset within the competition**. Within this competition, the definition of any code or software that accesses this dataset or reads this dataset in any manner must be part of the research or experimentation related to producing a model for this competition. The use of this dataset in the commercial context is **prohibited**.
 
 Commercial purposes include, but are not limited to:
 
@@ -73,7 +105,5 @@ Commercial purposes include, but are not limited to:
 3. Selling a subset of data or the preprocessed forms of data from the dataset.
 4. Creating military applications.
 
-Any model or software derived from this dataset, through training autonomously or by data, the inspection must be approved by Huawei Hong Kong Research Center and LBP Medicine.
-
-The Huawei Hong Kong Research Center and LBP Medicine reserve the right to modify and change this dataset and the section Dataset Privacy in this Rule Book and Guidelines for MindSpore Pathology Diagnosis Challenge. This dataset comes without any warranty, and Huawei Research Center and LBP Medicine cannot be held accountable for any damage \(physical, financial, or otherwise\) caused by the use of this dataset.
+The **LBP Medicine** reserves the right to modify and change this dataset and the section Data Terms and Conditions in this Rule Book and Guidelines for MindSpore Pathology Diagnosis Challenge. This dataset comes without any warranty, and LBP Medicine cannot be held accountable for any damage \(physical, financial, or otherwise\) caused by the use of this dataset.
 

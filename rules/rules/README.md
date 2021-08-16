@@ -12,7 +12,7 @@ In recent years, advances in computer vision have made qualitative leaps in almo
 
 To tackle the aforementioned challenge, **Huawei**, **Hong Kong Science and Technology Parks Corporation**, and **Guangzhou AnBiPing \(LBP\) Medicine Sci. & Tech. Co., Ltd.** collaborate to hold MindSpore Challenge - Pathology Diagnosis.
 
-In this competition, pathological images labeled for the diagnosis of **peripheral pulmonary diseases** will be provided. Bronchoscopy brushing techniques are the method to sample these pathological images. Your team's goal is to develop and design an AI model with the assistance of **MindSpore** to **locate and classify cancer cells** in pathological images.
+In this competition, pathological images labeled for the diagnosis of **peripheral pulmonary diseases** will be provided by **LBP Medicine**. Bronchoscopy brushing techniques are the method to sample these pathological images. Your team's goal is to develop and design an AI model with the assistance of **MindSpore** to **locate and classify cancer cells** in pathological images.
 
 The bronchoscopy brushing methodology samples the patient's cells in the airways that lead to the lungs. We can obtain a pathology image by placing these samples under a microscope. A professional pathologist will view these images and identify the location and the classification of these cells. By automating this task, your participation could help to free an enormous amount of health professionals' time for pathological diagnosis.
 

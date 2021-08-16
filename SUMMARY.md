@@ -27,3 +27,7 @@
 
 * [📥 MindSpore Installation Guide](mindspore-tutorial/mindspore-installation-guide.md)
 
+---
+
+* [Work to do](work-to-do.md)
+
