@@ -18,7 +18,7 @@ The **FROC** value can be calculated with the following algorithm:
   * Recall: TP / number of ground truth bounding-box
   * False Positive/ image: FP / number of images
 * Plot values for each threshold on a Recall-False Positive/Image graph, interpolate values with linear interpolation.
-* Using the 6 values of False Positive/Image to find the Recall, average them.
+* Using the 6 values of False Positive/Image to find the Recall values and average them to get FROC.
 
 _\* TP = True Positive; FP = False Positive_
 

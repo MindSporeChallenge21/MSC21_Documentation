@@ -16,7 +16,7 @@ In this competition, pathological images labeled for the diagnosis of **peripher
 
 The bronchoscopy brushing methodology samples the patient's cells in the airways that lead to the lungs. We can obtain a pathology image by placing these samples under a microscope. A professional pathologist will view these images and identify the location and the classification of these cells. By automating this task, your participation could help to free an enormous amount of health professionals' time for pathological diagnosis.
 
-Contestants are expected to train their model with MindSpore to localise and classify cells on biopsy samples. The competition is the form of a standard Multi-label Object Detection Task. Participants are invited to utilize the AI computing power on the Huawei Cloud's ModelArts equipped with Huawei Ascend 910 NPUs for model training. 
+Contestants are expected to train their model with MindSpore to localize and classify cells on biopsy samples. The competition is the form of a standard Multi-label Object Detection Task. Participants are invited to utilize the AI computing power on the Huawei Cloud's ModelArts equipped with Huawei Ascend 910 NPUs for model training. 
 
 ### AGREEMENT
 
@@ -24,7 +24,7 @@ Any decision or determination by any contest administrator or judge, including t
 
 Unless you agree to these Terms and Applicable Rules, you \(1\) may not enter the contest and the workshops, and you \(2\) are not eligible to receive any contest prize.
 
-The words "include" and "including" as used in these Terms and any Rules mean "including but not limited to." The abbreviation "Huawei HKRC" refers to the "Huawei Hong Kong Research Centre", "HKSTP" refers to the "Hong Kong Science and Technology Park Corp.", and "LBP Medicine" refers to the "Guangzhou AnBiPing \(LBP\) Medicine Sci. & Tech."
+The words "include" and "including" as used in these Terms and any Rules mean "including but not limited to." The abbreviation "Huawei HKRC" refers to the "Huawei Hong Kong Research Centre", "HKSTP" refers to the "Hong Kong Science and Technology Park Corp.", and "LBP Medicine" refers to the "Guangzhou AnBiPing \(LBP\) Medicine Sci. & Tech". 
 
 
 

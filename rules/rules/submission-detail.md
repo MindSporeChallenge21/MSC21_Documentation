@@ -1,6 +1,6 @@
 # Submission Detail
 
-In the **Qualification Round**, each contestant’s submission will be tested by the Huawei HKRC evaluation queue and every contestant should submit their results following the format below.
+In the **Qualification Round**, each contestant’s submission will be tested by the evaluation queue and every contestant should submit their results following the format below.
 
 {% hint style="info" %}
 Please follow the structure listed on the submission detail to ensure your score
@@ -70,14 +70,13 @@ An **entry point file** needs to export specific functionalities for the evaluat
         </p>
       </td>
       <td style="text-align:left">
-        <p>This function allows participants to <b>preprocess the dataset</b>, so
-          that the network can receive the correct data format.</p>
+        <p>This function allows participants to <b>preprocess the dataset</b> so that
+          the network can receive the correct data format.</p>
         <p></p>
         <p>The <b><code>image_id</code></b> is the string for identifying an instance
           of the image.</p>
         <p></p>
-        <p>The <b><code>image</code></b> is the CHW<a href>[7]</a> numpy 3 dimensional
-          array.</p>
+        <p>The <b><code>image</code></b> is the CHW numpy 3 dimensional array.</p>
         <p></p>
         <p>Each test image will be called onto this function, and participants can
           use the <b><code>image_id</code></b> to locate the variables that might be
@@ -113,9 +112,6 @@ An **entry point file** needs to export specific functionalities for the evaluat
         <p>&lt;em&gt;&lt;/em&gt;</p>
         <p><em>If there is no </em><b><code>pre_process</code></b><em> function the image will instead be converted into Tensor and sent into the network.</em>
         </p>
-        <p>&lt;em&gt;&lt;/em&gt;</p>
-        <p><em>CHW implies (C)Channel first, then the (H)Height dimension, and finally the (W)Width dimension. Eg. of an image shape would be (3, 720, 1280) for a 720p RGB image</em>
-        </p>
       </td>
     </tr>
     <tr>
@@ -134,7 +130,7 @@ An **entry point file** needs to export specific functionalities for the evaluat
       <td style="text-align:left">
         <p>This function allows participants to parse the output from the model,
           the final output format of the data is a 2D-Array, with the number of bounding
-          boxes as first dimension and bounding boxes details as the second dimension.
+          boxes as the first dimension and bounding boxes details as the second dimension.
           <br
           />
         </p>
@@ -165,7 +161,9 @@ An **entry point file** needs to export specific functionalities for the evaluat
         </p>
         <p><code>] # 2d array</code>
         </p>
-        <p></p>
+        <p>&lt;code&gt;&lt;/code&gt;</p>
+        <p>If there is no <b><code>post_process</code></b> function then the evaluation
+          system expects your return value to be correctly specified.</p>
       </td>
     </tr>
     <tr>
@@ -219,16 +217,16 @@ An **entry point file** needs to export specific functionalities for the evaluat
         </p>
         <p>
           <br />If there is no <b><code>saliency_map</code></b> the function then the evaluation
-          system assumes that you opt-out for the Special Prize for Explainability
-          and will not score for the Explainable Task.
-          <br />
-        </p>
-        <p><em>CHW implies (C)Channel first, then the (H)Height dimension, and finally the (W)Width dimension. Eg. of an image shape would be (3, 720, 1280) for a 720p RGB image</em>
-        </p>
+          system assumes that you opt-out for the <em><b>Special Prize for Explainability</b></em> and
+          will not score for the <b>Explainable Task</b>.</p>
       </td>
     </tr>
   </tbody>
 </table>
+
+{% hint style="info" %}
+`CHW` implies \(C\)Channel first, then the \(H\)Height dimension, and finally the \(W\)Width dimension. Eg. of an image shape would be \(3, 720, 1280\) for a 720p RGB image
+{% endhint %}
 
 {% hint style="info" %}
 Some of the libraries might not be supported by **ModelArts** \(evaluation system\), participants are required to find alternatives or email an **inquiry to** ~~**XXX**~~, and participants can use the ModelArts account provided for training models to test the submitted code, the environment for the evaluation system is supposed to be the same.
@@ -301,14 +299,14 @@ https://this.place.to.submit.com
 
 ### Accepted Format
 
-* **A single Python file**
-* **All codes in zip/tarball**
+* **A single Python file; or**
+* **All codes in a zip/tarball**
 
 {% hint style="info" %}
 Supported formats of zip/tarball, _.tar.bz2, .tbz2, .tar.gz, .tgz, .tar, .tar.xz, .txz, .zip_
 {% endhint %}
 
-If a zip/tarball file is submitted instead, We will unzip the file \(supported formats\) and find the entry point Python code. The way we traverse the file system to find the **participant\_model.py** file, this file is the entry point of the code. We expect this file to be in the root or any first level directory. If there are multiple files of the same name, we might have problems finding the one that we needed, it’s participant's responsibility to keep this from not happening.[\[13\]]()
+If a zip/tarball file is submitted instead, We will unzip the file and find the entry point Python code. We will traverse the folder to find the **participant\_model.py** file, this file is the entry point of the code. We expect this file to be in the _root or any first-level directory_. If there are multiple files of the same name, we might have problems finding the one that we needed, it’s the participant's responsibility to keep this from not happening.
 
 ### Evaluation Code
 
@@ -357,7 +355,7 @@ for image_id, image in data:
    xai_esults.append(xai_result)
 ```
 
-The above code will be run in the ModelArts Atlas 910 for faster inference in the dataset\_3. But due to the limitation of this competition, the participants are required to reduce the complexity of the model. Any model trained for more than **60 minutes** will be terminated, and the scoring will not be considered. The participants can only submit **XXX times per day**.
+The above code will be run in the ModelArts Atlas 910 for faster inference in the **`dataset_3`**. But due to the limitation of this competition, the participants are required to reduce the complexity of the model. Any model trained for more than **60 minutes** will be terminated, and the scoring will not be considered. The participants can only submit **XXX times per day**.
 
 ## 🏅 Ranking
 
@@ -365,7 +363,7 @@ After submission, participants can view their ranking in the following URL:
 
 > https:////
 
-Teams will submit their solution for each round through the Competition Portal. Only one submission can be run at any time and teams may submit more than one submission as long as they do not interfere with the proper functioning of the competition. Only the highest-scoring submission will be considered.
+Teams will submit their solution for each round through the Competition Portal. _Only one submission can be run at any time_ and teams may submit more than one submission as long as they do not interfere with the proper functioning of the competition. Only the highest-scoring submission will be considered.
 
 ## 🏁 Final Round Submission
 
@@ -375,7 +373,7 @@ If participants successfully entered the Final Round, participants are required 
 2. Presentations
 
 {% hint style="warning" %}
-Late submission will not be entertained, and participants will be considered opting out of the competition.
+**Late submission will not be entertained**, and participants will be considered opting out of the competition.
 {% endhint %}
 
 All submissions must be derived from participants' work, and any use of code from other parties that are not of team members required a citation. The authority should also be added to the presentation for the final round.

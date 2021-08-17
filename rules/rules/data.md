@@ -69,9 +69,9 @@ Further information for ModelArts and Moxing is in the training and testing guid
 
 ## 3 Dataset Description  - `dataset_3`
 
-The **`dataset_3`** is specifically for evaluation purposes. Each image will be passed into the user defined functions for evaluation purposes. 
+The **`dataset_3`** is specifically for evaluation purposes. Each image will be passed into the user-defined functions for evaluation purposes. 
 
-This dataset also contains a set of masks for selected datasets, these mask contains information regarding the important parts for recognising the labels. This masks will be compared against the saliency map produced in your code.
+This dataset also contains a set of masks for selected datasets, these mask contains information regarding the important parts for recognizing the labels. These masks will be compared against the saliency map produced in your code.
 
 ## 🔢 Dataset Description
 
@@ -83,7 +83,7 @@ The labels contain few columns namely:
 
 The labels \(**`xmin`**, **`ymin`**, **`xmax`**, **`ymax`**\) will be floating-point numbers between 0 and 1. For the x-axis, the related columns are `xmin` and `xmax`, the value 0 corresponds to the left side of the image, and 1 corresponds to the right side of the image. For the y-axis, the same idea applies, but with 0 value at the top of the image and 1 at the bottom corner of the image.
 
-The classes \(**`scc`**, **`ac`**, **`sclc`**, **`nsclc`**\) is the classification of the cancer cells, because there are multiple classes per cell \(multi-label classification problem\), each class has a column with value 1 if the bounding boxes belong to the class. With the **`image_id`** the image filename can be obtained by concatenating the **`image_id`** with the **`.bmp`** file extension.
+The classes \(**`scc`**, **`ac`**, **`sclc`**, **`nsclc`**\) is the classification of the cancer cells because there are multiple classes per cell \(multi-label classification problem\), each class has a column with value 1 if the bounding boxes belong to the class. With the **`image_id`** the image filename can be obtained by concatenating the **`image_id`** with the **`.bmp`** file extension.
 
 Contestants are expected to design a model for finding the bounding boxes for the samples and classify the diagnosed cells.
 
@@ -91,7 +91,7 @@ Contestants are expected to design a model for finding the bounding boxes for th
 
 {% hint style="danger" %}
 1. The data published by **LBP Medicine** does not contain patients’ information.
-2. The ownership and the copyright of the images and the labels are belong to **LBP Medicine**.
+2. The ownership and the copyright of the images and the labels belong to **LBP Medicine**.
 3. The use of the photos must abide by the Term of service of **LBP Medicine**.
 4. The users of the photos accept full responsibility for the use of the dataset, including but not limited to the use of any copies of copyrighted images that they may create from the dataset.
 {% endhint %}

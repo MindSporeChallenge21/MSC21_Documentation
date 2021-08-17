@@ -10,7 +10,7 @@ Participants are required to classify the dataset with different labels with the
 
 ## Data
 
-Participants will be given different set of data during different stages in this competition, you can access to the detail of the data here.
+Participants will be given a different set of data during different stages in this competition, you can access the detail of the data here.
 
 {% page-ref page="data.md" %}
 

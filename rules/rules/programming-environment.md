@@ -12,7 +12,7 @@ All the models needed to be written with the **provided APIs in MindSpore** to b
 
 ## 🛠 Workshops, Training Sessions!
 
-Contestants are expected to participate in the training session provided by Huawei HKRC to understand how to operate with the dataset, design models, training, and evaluation of the model. The training and evaluation process will only be running efficiently if the scripts are written correctly, and the MindSpore Ascend version of operators will significantly speed up your development and evaluation, which leads to faster experimentation cycles.
+Contestants are expected to participate in the training session provided by the organizers to understand how to operate with the dataset, design models, training, and evaluation of the model. The training and evaluation process will only be running efficiently if the scripts are written correctly, and the MindSpore Ascend version of operators will significantly speed up your development and evaluation, which leads to faster experimentation cycles.
 
 ## Example
 
@@ -20,7 +20,7 @@ Contestants are expected to participate in the training session provided by Huaw
 
 The above working examples allow participants to have a starting sandbox for the competition. Participants should test on the local environment with the **`dataset_1`** so that the first training epochs on the training data can be performed.
 
-The contestant can send message to Discord to report or ask questions regarding MindSpore, Python, and the Submission of this competition.
+The contestant can send messages to Discord to report or ask questions regarding MindSpore, Python, and the Submission of this competition.
 
 {% hint style="warning" %}
 Our evaluation server supports only _**common libraries**_ that exist on **ModelArts**, if there are specific libraries that you may need for the evaluation, please send the inquiries to Discord for the specific request.
