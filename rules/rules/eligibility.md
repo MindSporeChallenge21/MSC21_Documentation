@@ -9,7 +9,7 @@
 
 1. A team can have a maximum of _**three members**_.
 2. Each participant can only be a member of a single team.
-3. Only teams formed in Hong Kong institutions are eligible for this contest.
+3. Only teams formed in Hong Kong are eligible for this contest.
 4. There is a maximum of 30 teams in this competition.
 
 ## 🔎 Verifying Eligibility
