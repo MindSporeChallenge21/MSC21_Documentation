@@ -93,14 +93,7 @@ $$
 
 ### Scoring for Final Round
 
-The **top 6 teams in the Qualification Round** will be selected to participate in the **Final Pitching**. The details of the final pitching are as follow:
-
-| Title | Final Round Pitching |
-| :--- | :--- |
-| **Date** | 15 October 2021 |
-| **Time** | 2 - 6 PM |
-| **Venue** | Charles K Kao Auditorium, HKSTP |
-| **Attire** | Business Casual |
+The **top 6 teams in the Qualification Round** will be selected to participate in the **Final Pitching**. 
 
 Each contestant of the final round is to present the following details for their project. The following structure is a reference for the contestants; participants are free to structure their presentations. The time for the presentation is 20 mins. Pitching for 15 minutes and a Q&A session for 5 minutes.
 
