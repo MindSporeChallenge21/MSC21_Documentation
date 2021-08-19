@@ -20,13 +20,11 @@ Each contestant’s model will be scored based on the classification accuracy
 
 There are two evaluation tasks to be completed, namely the **accuracy and explainable tasks**. To rank higher in the leaderboard, teams are encouraged to design the model to maximize individual value. This part of the explanation will introduce the classification evaluation formula.
 
-Check out your leaderboard now!! ➡ 
+Check out your leaderboard now!! ➡
 
 ## 🎯 Accuracy
 
 The accuracy task is a computation based on the **localization and classification operations**. The Accuracy Score is the classification score on the **`dataset_3`**.
-
-
 
 ### Intersection over Prediction, IoP
 
@@ -57,7 +55,7 @@ The example below shows the images of IoP:
 
 This challenge uses the **Free-response Receiver Operating Characteristic \(FROC\) at IoP &gt; 0.5**
 
-Each bounding box is considered correct when the **maximum IoP with any ground truth bounding boxes is more significant than 0.5**[\[2\]](). Each class's recall values can be calculated to construct a recall vs false positive \(per image\) graph for every level. The precise method for calculating the recall and false positives is in the appendix.
+Each bounding box is considered correct when the **maximum IoP with any ground truth bounding boxes is more significant than 0.5**[\[2\]](evaluation-criteria.md). Each class's recall values can be calculated to construct a recall vs false positive \(per image\) graph for every level. The precise method for calculating the recall and false positives is in the appendix.
 
 The **FROC** is calculated as the **average value of recall values for false positives \(per image\)** \(at ¼ , ½, 1, 2, 4, 8\). Linear interpolation will be applied to determine the recall value for false positive, for value out of bound, the most recent maximum recall value will be used for interpolation.
 
@@ -93,7 +91,7 @@ $$
 
 ### Scoring for Final Round
 
-The **top 6 teams in the Qualification Round** will be selected to participate in the **Final Pitching**. 
+The **top 6 teams in the Qualification Round** will be selected to participate in the **Final Pitching**.
 
 Each contestant of the final round is to present the following details for their project. The following structure is a reference for the contestants; participants are free to structure their presentations. The time for the presentation is 20 mins. Pitching for 15 minutes and a Q&A session for 5 minutes.
 

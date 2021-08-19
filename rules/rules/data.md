@@ -54,7 +54,7 @@ The data \(**`dataset_2`**\) can be obtained through ModelArts Moxing Framework 
 
 images: obs:////
 
-labels: obs://// 
+labels: obs:////
 {% endhint %}
 
 In the **dataset\_2** there are 4000 images and a CSV label file. A further description of the labels is in the [Dataset Description Section](data.md#dataset-description). Since you can only access the dataset through **Moxing Framework** in **ModelArts**, we highly encourage participants to use the ModelArts for Training, because it is faster and more efficient for experimentation.
@@ -69,7 +69,7 @@ Further information for ModelArts and Moxing is in the training and testing guid
 
 ## 3 Dataset Description  - `dataset_3`
 
-The **`dataset_3`** is specifically for evaluation purposes. Each image will be passed into the user-defined functions for evaluation purposes. 
+The **`dataset_3`** is specifically for evaluation purposes. Each image will be passed into the user-defined functions for evaluation purposes.
 
 This dataset also contains a set of masks for selected datasets, these mask contains information regarding the important parts for recognizing the labels. These masks will be compared against the saliency map produced in your code.
 

@@ -1,6 +1,6 @@
 # Appendix
 
-### Recall-False Positive/Image calculation for samples
+## Recall-False Positive/Image calculation for samples
 
 For every class, we select ground truth bounding boxes\(T\) for the class, and the prediction bounding boxes\(P\) for the class.
 

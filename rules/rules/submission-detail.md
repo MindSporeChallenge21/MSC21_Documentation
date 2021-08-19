@@ -29,7 +29,7 @@ An **entry point file** needs to export specific functionalities for the evaluat
   <tbody>
     <tr>
       <td style="text-align:left">
-        <p><code>class </code><b><code>Net</code></b><code>(</code>
+        <p><code>class</code>  <b><code>Net</code></b><code>(</code>
         </p>
         <p><code>mindspore.nn.Cell</code>
         </p>
@@ -39,19 +39,14 @@ An **entry point file** needs to export specific functionalities for the evaluat
       <td style="text-align:left">
         <p>This class extends <b><code>mindspore.nn.Cell</code></b> which is the standard
           way to instantiate a network in MindSpore.</p>
-        <p></p>
         <p>Participants can name their class anything as long as the evaluation system
           is able to read the variable <b>Net</b> from the file.</p>
         <p>Therefore a way to rename an existing class to <b>Net</b> can be easily
           done as below.</p>
-        <p></p>
         <p><code>Net = FasterRCNN</code>
         </p>
-        <p></p>
         <p>Assuming <b>FasterRCNN</b> was used as the class name for the network.</p>
-        <p></p>
         <p>The model checkpoint uploaded, will then be loaded into the network.</p>
-        <p></p>
         <p><em>(Optionally, the participant can use a callable as long as the callable returns a</em>  <em><b><code>mindspore.nn.Cell</code></b>instance)</em>
         </p>
       </td>
@@ -60,11 +55,11 @@ An **entry point file** needs to export specific functionalities for the evaluat
       <td style="text-align:left">
         <p><em>(Optional)</em>
         </p>
-        <p><code>def </code><b><code>pre_process</code></b><code> (</code>
+        <p><code>def</code>  <b><code>pre_process</code></b>  <code>(</code>
         </p>
-        <p><code>  image_id,</code>
+        <p> <code>image_id,</code>
         </p>
-        <p><code>  image</code>
+        <p> <code>image</code>
         </p>
         <p><code>)</code>
         </p>
@@ -72,45 +67,38 @@ An **entry point file** needs to export specific functionalities for the evaluat
       <td style="text-align:left">
         <p>This function allows participants to <b>preprocess the dataset</b> so that
           the network can receive the correct data format.</p>
-        <p></p>
         <p>The <b><code>image_id</code></b> is the string for identifying an instance
           of the image.</p>
-        <p></p>
         <p>The <b><code>image</code></b> is the CHW numpy 3 dimensional array.</p>
-        <p></p>
         <p>Each test image will be called onto this function, and participants can
           use the <b><code>image_id</code></b> to locate the variables that might be
           needed in the <b><code>post_process</code></b> function.</p>
-        <p></p>
         <p>The return value will be sent into the model as simple as:</p>
         <p><b><code>net = Net()</code></b>
         </p>
-        <p><b><code>predictions = net( </code></b>
+        <p><b><code>predictions = net(</code></b>
         </p>
-        <p><b><code>    pre_process(image_id, image)</code></b>
+        <p> <b><code>pre_process(image_id, image)</code></b>
         </p>
         <p><b><code>)</code></b>
         </p>
-        <p></p>
         <p>Additionally, if you are <b>returning a Python dictionary,</b> we will split
           the key-value pairs into the model with the <b>spread operator(<code>**</code>)</b>.
           Below shows an example of the action:</p>
         <p><code>net = Net()</code>
         </p>
-        <p><code>predictions = net( </code>
+        <p><code>predictions = net(</code>
         </p>
-        <p><code>    </code><b><code>**pre_process</code></b><code>(image_id, image)</code>
+        <p> <b><code>**pre_process</code></b><code>(image_id, image)</code>
         </p>
         <p><code>)</code>
         </p>
-        <p></p>
         <p>In this case, the parameter name in the <b><code>construct</code></b> function
           of <b><code>Net</code></b> is important if you have multiple parameters.</p>
-        <p></p>
         <p><em>(The output of the function should not be a NumPy array or dictionary with any values of NumPy array, as MindSpore internal engine rejects any value of NumPy array. A simple solution would be to apply the function</em>  <em><b><code>mindspore.Tensor</code></b></em>  <em>on the output values)</em>
         </p>
         <p>&lt;em&gt;&lt;/em&gt;</p>
-        <p><em>If there is no </em><b><code>pre_process</code></b><em> function the image will instead be converted into Tensor and sent into the network.</em>
+        <p><em>If there is no</em>  <b><code>pre_process</code></b>  <em>function the image will instead be converted into Tensor and sent into the network.</em>
         </p>
       </td>
     </tr>
@@ -118,11 +106,11 @@ An **entry point file** needs to export specific functionalities for the evaluat
       <td style="text-align:left">
         <p><em>(Optional)</em>
         </p>
-        <p><code>def </code><b><code>post_process</code></b><code>(</code>
+        <p><code>def</code>  <b><code>post_process</code></b><code>(</code>
         </p>
-        <p><code>  image_id,</code>
+        <p> <code>image_id,</code>
         </p>
-        <p><code>  prediction</code>
+        <p> <code>prediction</code>
         </p>
         <p><code>)</code>
         </p>
@@ -144,7 +132,7 @@ An **entry point file** needs to export specific functionalities for the evaluat
           />
         </p>
         <p>The return value of each row in the array should be:</p>
-        <p><b>    <code>[xmin,ymin,xmax,ymax, p0,p1,p2,p3]</code><br /></b>
+        <p> <b><code>[xmin,ymin,xmax,ymax, p0,p1,p2,p3]</code><br /></b>
         </p>
         <p>Where p0 to p3 are the probabilities for <b><code>scc</code></b>, <b><code>ac</code></b>,<b><code>sclc</code></b>,
           and<b><code>nsclc</code></b> respectively. The coordinates and the probabilities
@@ -155,9 +143,9 @@ An **entry point file** needs to export specific functionalities for the evaluat
           the label <em>SCC</em> and <em>NSCLC</em> would be:</p>
         <p><code>[</code>
         </p>
-        <p><code>   [0, 0, 1, 0.5, 1, 0, 0, 1],</code>
+        <p> <code>[0, 0, 1, 0.5, 1, 0, 0, 1],</code>
         </p>
-        <p><code>   ... # some other bounding boxes</code>
+        <p> <code>... # some other bounding boxes</code>
         </p>
         <p><code>] # 2d array</code>
         </p>
@@ -170,15 +158,15 @@ An **entry point file** needs to export specific functionalities for the evaluat
       <td style="text-align:left">
         <p><em>(Optional)</em>
         </p>
-        <p><code>def </code><b><code>saliency_map</code></b><code>(</code>
+        <p><code>def</code>  <b><code>saliency_map</code></b><code>(</code>
         </p>
-        <p><code>  net,</code>
+        <p> <code>net,</code>
         </p>
-        <p><code>  image_id,</code>
+        <p> <code>image_id,</code>
         </p>
-        <p><code>  image,</code>
+        <p> <code>image,</code>
         </p>
-        <p><code>  predictions</code>
+        <p> <code>predictions</code>
         </p>
         <p><code>)</code>
         </p>
@@ -211,7 +199,7 @@ An **entry point file** needs to export specific functionalities for the evaluat
           map as easy as:</p>
         <p><code>from mindspore.explainer.explanation \</code>
         </p>
-        <p><code>    import Occlusion</code>
+        <p> <code>import Occlusion</code>
         </p>
         <p><code>deconv = Occlusion(net)result = deconv(image)</code>
         </p>
@@ -241,31 +229,31 @@ import mindspore as ms
 class Net(ms.nn.Cell):
     def __init__(self):
         super(Net, self).__init__()
-        
+
     def construct(self, x):
-    
+
 def pre_process(image_id: str, image: np.array):
   """
   Keyword arguments:
   image_id -- str format, for identifying an image.
   image -- np.array of CHW format.
-  
+
   Returns:
   pre_processed_data -- dict or ms.Tensor, to be passed into the input.
   """
-  
+
 def post_process(image_id: str, prediction: ms.Tensor):
     """
     Keyword arguments:
     image_id -- str format, for identifying an image.
     prediction -- the output of the network.
-    
+
     Returns:
     results -- np.array or 2d-list,
     [xmin, ymin, xmax, ymax, p0, p1, p2, p3][]
     p0 to p3 implies probabilities for SCC, AC, SCLC, NSCLC
     """
-    
+
 def saliency_map(
     net: Net,
     image_id: str,
@@ -278,7 +266,7 @@ def saliency_map(
     image_id -- str format, for identifying an image.
     image -- np.array of CHW format.
     prediction -- the output of the network.
-    
+
     Returns:
     result -- np.array, with the same shape of the image width and height, but only one channel. Shape: (H, W)
     Should be the result from ms.explainer.*
@@ -287,7 +275,7 @@ def saliency_map(
 
 Participants can use this template to complete the code submission on the website:
 
-> https:////
+> [https:////](https:////)
 
 ## 🆙 Submit Code to MSC21 Platform
 
@@ -295,7 +283,7 @@ Participants can use this template to complete the code submission on the websit
 
 ### Location
 
-https://this.place.to.submit.com
+[https://this.place.to.submit.com](https://this.place.to.submit.com)
 
 ### Accepted Format
 
@@ -350,7 +338,7 @@ for image_id, image in data:
        )
    else:
        xai_result = None
-   
+
    results.append(result)
    xai_esults.append(xai_result)
 ```
@@ -361,7 +349,7 @@ The above code will be run in the ModelArts Atlas 910 for faster inference in th
 
 After submission, participants can view their ranking in the following URL:
 
-> https:////
+> [https:////](https:////)
 
 Teams will submit their solution for each round through the Competition Portal. _Only one submission can be run at any time_ and teams may submit more than one submission as long as they do not interfere with the proper functioning of the competition. Only the highest-scoring submission will be considered.
 

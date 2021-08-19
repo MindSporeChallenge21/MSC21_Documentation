@@ -14,13 +14,13 @@ description: >-
 
 ### ![](.gitbook/assets/github-icon.png) GitHub Repos
 
-{% embed url="https://github.com/MindSporeChallenge21" %}
+{% embed url="https://github.com/MindSporeChallenge21" caption="" %}
 
 ## 🤲 Community
 
 ### ![](.gitbook/assets/discord-logo.png) Join Our Discord Server
 
-{% embed url="https://discord.gg/vNArdc2b" %}
+{% embed url="https://discord.gg/vNArdc2b" caption="" %}
 
 ## 📃 Documents
 
@@ -48,6 +48,4 @@ description: >-
 * [ModelArts Tutorial](https://support.huaweicloud.com/en-us/qs-modelarts/modelarts_06_0001.html)
 * [OBS Tutorial](https://support.huaweicloud.com/intl/en-us/obs/index.html)
 * [MindSpore CV-related source code](https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/cv)
-
-
 

@@ -8,8 +8,8 @@
 * [x] Installing MindSpore
 * [x] Verify Installation
 
-> 1st part installation follows [https://bbs.huaweicloud.com/forum/thread-108694-1-1.html](https://bbs.huaweicloud.com/forum/thread-108694-1-1.html)   
-> 2nd part of the installation follows [https://mindspore.cn/install](https://mindspore.cn/install)   
+> 1st part installation follows [https://bbs.huaweicloud.com/forum/thread-108694-1-1.html](https://bbs.huaweicloud.com/forum/thread-108694-1-1.html)  
+> 2nd part of the installation follows [https://mindspore.cn/install](https://mindspore.cn/install)  
 > \* version of this documentation is Ubuntu Desktop 18.04
 
 ### Installing prerequisite
@@ -118,12 +118,12 @@ if pip failed due to SSL problem please check References 1
 {% endhint %}
 
 {% hint style="danger" %}
- if pip failed due to permissions   
-use `--user` flag 
+if pip failed due to permissions  
+use `--user` flag
 {% endhint %}
 
 {% hint style="danger" %}
-Futher problem on installation need to check if jupyter is added into `$PATH` or run the command as sudo. \(ie. `sudo pip3 install jupyterlab`\) 
+Futher problem on installation need to check if jupyter is added into `$PATH` or run the command as sudo. \(ie. `sudo pip3 install jupyterlab`\)
 {% endhint %}
 
 Test the installation with
@@ -135,9 +135,9 @@ jupyter lab
 
 ## Installing MindSpore
 
-You can obtain the command of installing MindSpore from [https://mindspore.cn/install](https://mindspore.cn/install) 
+You can obtain the command of installing MindSpore from [https://mindspore.cn/install](https://mindspore.cn/install)
 
-Just be aware of the _**pip command.**_ For `python3` uses `pip3` for installation instead of `pip`. 
+Just be aware of the _**pip command.**_ For `python3` uses `pip3` for installation instead of `pip`.
 
 As an example a Ubuntu x86 chipset:
 

@@ -14,7 +14,3 @@ Participants will be given a different set of data during different stages in th
 
 {% page-ref page="data.md" %}
 
-
-
-
-

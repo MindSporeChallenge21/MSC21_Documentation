@@ -10,5 +10,3 @@
 * [ ] Ranking same score different time need to show.
 * [ ] Split the dataset for testing/ randomly samples
 * [ ] 
-
-
