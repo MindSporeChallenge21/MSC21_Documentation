@@ -1,7 +1,7 @@
 ---
 description: >-
-  This is the page contains all useful links & documents you may need during the
-  competition.
+  This is the page contains all useful links & documssssents you may need during
+  the competition.
 ---
 
 # ✨ Getting Started
