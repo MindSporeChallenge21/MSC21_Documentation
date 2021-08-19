@@ -1,7 +1,7 @@
 ---
 description: >-
-  This is the page contains all useful links & documssssents you may need during
-  the competition.
+  This is the page contains all useful links &
+  documeasasasasasasasasasasasasasnts you may need during the competition.
 ---
 
 # ✨ Getting Started
@@ -14,13 +14,13 @@ description: >-
 
 ### ![](.gitbook/assets/github-icon.png) GitHub Repos
 
-{% embed url="https://github.com/MindSporeChallenge21" caption="" %}
+{% embed url="https://github.com/MindSporeChallenge21" %}
 
 ## 🤲 Community
 
 ### ![](.gitbook/assets/discord-logo.png) Join Our Discord Server
 
-{% embed url="https://discord.gg/vNArdc2b" caption="" %}
+{% embed url="https://discord.gg/vNArdc2b" %}
 
 ## 📃 Documents
 
@@ -48,4 +48,6 @@ description: >-
 * [ModelArts Tutorial](https://support.huaweicloud.com/en-us/qs-modelarts/modelarts_06_0001.html)
 * [OBS Tutorial](https://support.huaweicloud.com/intl/en-us/obs/index.html)
 * [MindSpore CV-related source code](https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/cv)
+
+
 
