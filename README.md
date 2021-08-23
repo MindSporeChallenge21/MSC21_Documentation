@@ -6,7 +6,9 @@ description: >-
 
 # ✨ Getting Started
 
-![](.gitbook/assets/logos%20%281%29.png)
+
+
+![](.gitbook/assets/logos.png)
 
 ## 🔗 Official Links
 

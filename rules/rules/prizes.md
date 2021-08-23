@@ -10,13 +10,13 @@ Cash prizes will be awarded in Hong Kong dollars and may be delivered in the for
 
 ### Prize Details
 
-| **Winning Teams Awards** | **Total Prizes Worth** |
-| :--- | :--- |
-| Model Score Winner | HKD 70,000 |
-| Model Score Runner-up | HKD 50,000 |
-| Pitching Score Winner | HKD 50,000 |
-| Pitching Score Runner-up | HKD 35,000 |
-| Special Price for Explainability | HKD 135,000 |
+| **Winning Teams Awards** |
+| :--- |
+| Model Score Winner |
+| Model Score Runner-up |
+| Pitching Score Winner |
+| Pitching Score Runner-up |
+| Special Price for Explainability |
 
 The participant will be eligible for the Special Prize for the Explainability if:
 
