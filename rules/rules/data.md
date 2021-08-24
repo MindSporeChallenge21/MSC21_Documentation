@@ -92,7 +92,8 @@ Contestants are expected to design a model for finding the bounding boxes for th
 {% hint style="danger" %}
 1. The data published by **LBP Medicine** does not contain patients’ information.
 2. The ownership and the copyright of the images and the labels belong to **LBP Medicine**.
-3. **LBP Medicine** guarantees that the data required in this competition are obtained through legal channels.
+3. The use of the photos must abide by the Term of service of **LBP Medicine**.
+4. **LBP Medicine** guarantees that the data required in this competition are obtained through legal channels.
 {% endhint %}
 
 By participating in this competition, contestants are allowed to access this dataset. There is some limitation in the use of this dataset. **The users may only use this dataset within the competition**. Within this competition, the definition of any code or software that accesses this dataset or reads this dataset in any manner must be part of the research or experimentation related to producing a model for this competition. The use of this dataset in the commercial context is **prohibited**.
