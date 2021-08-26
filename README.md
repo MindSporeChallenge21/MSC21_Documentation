@@ -8,44 +8,36 @@ description: >-
 
 ![](.gitbook/assets/logos%20%282%29.png)
 
+
+<br>
+<br>
+
 ## 🔗 Official Links
 
-### 💻 Website
+### 💻 <a href='https://mindsporechallenge.com/' target='_blank'> Website
 
-### ![](.gitbook/assets/github-icon.png) GitHub Repos
+#### <img src='.gitbook/assets/github-icon.png' width=22 align='left' style='padding-right: 6px'/> 
+### <a href="https://github.com/MindSporeChallenge21"> GitHub Repos </a>
 
-{% embed url="https://github.com/MindSporeChallenge21" caption="" %}
 
-## 🤲 Community
+#### <img src='.gitbook/assets/discord-logo.png' width=22 align='left' style='padding-right: 6px'/> 
+### <a href="https://discord.gg/vNArdc2b"> Community </a>
 
-### ![](.gitbook/assets/discord-logo.png) Join Our Discord Server
+<br><br>
 
-{% embed url="https://discord.gg/vNArdc2b" caption="" %}
+## 📃 Useful Resources
 
-## 📃 Documents
+1. [MSC21 overview briefing]()
+2. [Mindspore Installation Guideline](./mindspore-tutorial/mindspore-installation-guide.md)
+3. [Mindspore Tutorial Notebook](https://github.com/MindSporeChallenge21/resources/tree/main/notebook)
+4. [Training & Testing Guideline](training-and-testing/traintest.md)
+5. [Rule Book & Guidelines](rules/rules/README.md)
 
-#### 1. MSC21 overview briefing
-
-#### 2. Mindspore Installation Guideline
-
-{% page-ref page="mindspore-tutorial/mindspore-installation-guide.md" %}
-
-#### 3. Mindspore Tutorial
-
-#### 4. Training & Testing Guideline
-
-{% page-ref page="training-and-testing/traintest.md" %}
-
-#### 5. Rule Book & Guidelines
-
-{% page-ref page="rules/rules/" %}
-
-#### 6. Demo Code on Jupyter Notebook
 
 ## 🖇 Useful Links
 
-* [MindSpore Tutorial](https://www.mindspore.cn/tutorials/en/r1.3/index.html)
-* [ModelArts Tutorial](https://support.huaweicloud.com/en-us/qs-modelarts/modelarts_06_0001.html)
-* [OBS Tutorial](https://support.huaweicloud.com/intl/en-us/obs/index.html)
-* [MindSpore CV-related source code](https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/cv)
+1. [MindSpore Tutorial](https://www.mindspore.cn/tutorials/en/r1.3/index.html)
+2. [ModelArts Tutorial](https://support.huaweicloud.com/en-us/qs-modelarts/modelarts_06_0001.html)
+3. [OBS Tutorial](https://support.huaweicloud.com/intl/en-us/obs/index.html)
+4. [MindSpore CV-related source code](https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/cv)
 
