@@ -276,7 +276,7 @@ Participants can use this template to complete the code submission on the websit
 
 ## 🆙 Submit Code to MSC21 Platform
 
-{% page-ref page="../../training-and-testing/traintest.md" %}
+[](../../training-and-testing/traintest.md)
 
 ### Location
 

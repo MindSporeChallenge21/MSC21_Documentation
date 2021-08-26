@@ -2,9 +2,7 @@
 
 ## Download
 
-{% file src="../.gitbook/assets/model-training-and-testing-guideline-public.pptx" caption="Download the powerpoint" %}
-
-{% file src="../.gitbook/assets/model-training-and-testing-guideline-public.pdf" caption="Download to pdf" %}
+### [Download the powerpoint](https://github.com/MindSporeChallenge21/resources/raw/main/Model%20Training%20%26%20Testing%20Guideline%20-%20Public.pptx)
 
 ## Slides
 

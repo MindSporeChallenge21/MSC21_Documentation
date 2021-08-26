@@ -36,19 +36,9 @@ $$
 
 The example below shows the images of IoP:
 
-{% tabs %}
-{% tab title="IoP=1" %}
-![](../../.gitbook/assets/5.png)
-{% endtab %}
-
-{% tab title="IoP=0.6" %}
-![](../../.gitbook/assets/7%20%281%29.png)
-{% endtab %}
-
-{% tab title="Multiple IoP" %}
-![](../../.gitbook/assets/6%20%281%29.png)
-{% endtab %}
-{% endtabs %}
+| IoP=1             |  IoP=0.6 | Multiple Io |
+| ------------------------- | ------------------------- | ------ |
+| ![](../../.gitbook/assets/5.png) | ![](../../.gitbook/assets/7%20%281%29.png) |  ![](../../.gitbook/assets/6%20%281%29.png) |
 
 ### Classification
 
@@ -77,7 +67,7 @@ MindSpore provides an interesting toolkit called [**`mindspore.explainer`**](htt
 
 If you have successfully completed the requirements we will score your result against the masks of the images with the [AUC - ROC Curve formula](https://towardsdatascience.com/understanding-auc-roc-curve-68b2303cc9c5%20).
 
-{% embed url="https://www.mindspore.cn/doc/api\_python/zh-CN/r1.2/mindspore/mindspore.explainer.html" caption="Mindspore Explainer" %}
+### <a href="https://www.mindspore.cn/doc/api\_python/zh-CN/r1.2/mindspore/mindspore.explainer.html" target="_blank"> Mindspore Explainer </a>
 
 ## 🏅 Final Score
 

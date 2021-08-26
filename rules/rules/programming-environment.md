@@ -4,7 +4,7 @@
 
 [MindSpore version 1.2.0](https://mindspore.cn/doc/api_python/zh-CN/r1.2/index.html) is the main library used for this competition, and the participants are required to use MindSpore as the development tool for designing their models. MindSpore contains a fully-fledged neural network toolkit for users to develop their model.
 
-{% page-ref page="../../mindspore-tutorial/mindspore-installation-guide.md" %}
+[](../../mindspore-tutorial/mindspore-installation-guide.md)
 
 > All the models needed to be written with the **provided APIs in MindSpore** to be marked as **completed**.
 
@@ -15,7 +15,7 @@ Contestants are expected to participate in the training session provided by the 
 
 ## Example
 
-{% embed url="https://github.com/MindSporeChallenge21" caption="" %}
+### <a href="https://github.com/MindSporeChallenge21" target="_blank"> Github Code</a>
 
 The above working examples allow participants to have a starting sandbox for the competition. Participants should test on the local environment with the **`dataset_1`** so that the first training epochs on the training data can be performed.
 
