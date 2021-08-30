@@ -26,13 +26,12 @@ There are a few subsets of datasets. The primary dataset for user training and v
 | :--- | :--- | :--- |
 | `dataset_1` | Yes | 500 data points for experimentation and model design. |
 | `dataset_2` | Restricted Access | User access through Huawei Cloud’s [OBS](https://www.huaweicloud.com/en-us/product/obs.html), in [ModelArts](https://www.huaweicloud.com/intl/en-us/product/modelarts.html). |
-| `dataset_3` | No | For Accuracy task, and Explainable task \(with masks\). |
 
 ## 1 Dataset Description  - `dataset_1`
 
 > The data \(**`dataset_1`**\) can be obtained through the OBS bucket from Huawei Cloud of the following URL.
 
-[https:////](https://google.com)
+[https://msc21-dataset1.obs.cn-north-4.myhuaweicloud.com/dataset\_1.zip](https://msc21-dataset1.obs.cn-north-4.myhuaweicloud.com/dataset_1.zip)
 
 In the **dataset\_1** there are 500 images, a CSV label file, and a metadata CSV file in zipped format. The file structure for the datasets \(**`dataset_1`**\) are as below:
 
@@ -50,9 +49,9 @@ A further description of the labels is in the [Dataset Description Section](data
 
 > The data \(**`dataset_2`**\) can be obtained through ModelArts Moxing Framework only. From Huawei Cloud's OBS Bucket
 
-images: obs:////
+dataset obs path: 
 
-labels: obs:////
+obs://msc21-dataset2/
 
 In the **dataset\_2** there are 4000 images, a CSV label file, and a metadata CSV file. This dataset contains all the data in **`dataset_1`** too. 
 
@@ -60,15 +59,7 @@ A further description of the labels is in the [Dataset Description Section](data
 
 ### [ModelArts Moxing Framework](https://support.huaweicloud.com/intl/en-us/moxing-devg-modelarts/modelarts\_11\_0003.html)
 
-> Further information for ModelArts and Moxing is in the training and testing guidelines
-
-## 3 Dataset Description  - `dataset_3`
-
-The **`dataset_3`** is specifically for evaluation purposes. Each image will be passed into the user-defined functions for evaluation purposes.
-
-This dataset also contains a set of masks for selected datasets, these mask contains information regarding the important parts for recognizing the labels. These masks will be compared against the saliency map produced in your code.
-
-Image Count = 1000
+> Further information for ModelArts and Moxing is in the training and testing guidelines, this include the ways to import `dataset_2` and how to handle files on the ModelArts.
 
 ## 🔢 Dataset Description
 
@@ -96,7 +87,6 @@ Image Count in datasets are as below:
 | :--- | :--- |
 | `dataset_1` | 1000 |
 | `dataset_2` | 3000 |
-| `dataset_3` | 1000 |
 
 The bounding box count distribution for each dataset are as below:
 
