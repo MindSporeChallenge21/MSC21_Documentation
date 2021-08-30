@@ -51,7 +51,7 @@ A further description of the labels is in the [Dataset Description Section](data
 
 dataset obs path: 
 
-obs://msc21-dataset2/
+> obs://msc21-dataset2/
 
 In the **dataset\_2** there are 4000 images, a CSV label file, and a metadata CSV file. This dataset contains all the data in **`dataset_1`** too. 
 
