@@ -54,7 +54,9 @@ images: obs:////
 
 labels: obs:////
 
-In the **dataset\_2** there are 4000 images, a CSV label file, and a metadata CSV file. This dataset contains all the data in **`dataset_1`** too. A further description of the labels is in the [Dataset Description Section](data.md#dataset-description). Since you can only access the dataset through **Moxing Framework** in **ModelArts**, we highly encourage participants to use the ModelArts for Training, because it is faster and more efficient for experimentation.
+In the **dataset\_2** there are 4000 images, a CSV label file, and a metadata CSV file. This dataset contains all the data in **`dataset_1`** too. 
+
+A further description of the labels is in the [Dataset Description Section](data.md#dataset-description). Since you can only access the dataset through **Moxing Framework** in **ModelArts**, we highly encourage participants to use the ModelArts for Training, because it is faster and more efficient for experimentation.
 
 ### [ModelArts Moxing Framework](https://support.huaweicloud.com/intl/en-us/moxing-devg-modelarts/modelarts\_11\_0003.html)
 
@@ -65,6 +67,8 @@ In the **dataset\_2** there are 4000 images, a CSV label file, and a metadata CS
 The **`dataset_3`** is specifically for evaluation purposes. Each image will be passed into the user-defined functions for evaluation purposes.
 
 This dataset also contains a set of masks for selected datasets, these mask contains information regarding the important parts for recognizing the labels. These masks will be compared against the saliency map produced in your code.
+
+Image Count = 1000
 
 ## 🔢 Dataset Description
 
@@ -85,6 +89,39 @@ To facilitate some action in reading the dataset, we prepared the **`metadata.cs
 This file is created to support participants in working with the dataset.
 
 Be reminded that there are healthy samples in this dataset, which means images without any bounding boxes, these healthy samples will not have any column in the `labels.csv`, because they are healthy cells.
+
+Image Count in datasets are as below:
+
+| Dataset | Image Count |
+| :--- | :--- |
+| `dataset_1` | 1000 |
+| `dataset_2` | 3000 |
+| `dataset_3` | 1000 |
+
+The bounding box count distribution for each dataset are as below:
+
+| Bounding Box Count | Percentage in `dataset_1` | Percentage in `dataset_2` |
+| :--- | :--- | :--- |
+| 0 \(Healthy Samples\) | 32.40% | 33.30% |
+| 1 | 28.70% | 27.93% |
+| 2 | 16.50% | 17.87% |
+| 3 | 12.10% | 9.43% |
+| 4 | 5.20% | 5.10% |
+| 5 | 1.90% | 2.70% |
+| 6 | 1.00% | 1.73% |
+| 7 | 0.50% | 0.77% |
+| 8 | 0.30% | 0.27% |
+| 9 | 0.30% | 0.33% |
+| 10 | 0.11% | 0.57% |
+
+The label's distribution of all bounding box for the datasets are as below:
+
+| Dataset | SCC | AC | SCLC | NSCLC |
+| :--- | :--- | :--- | :--- | :--- |
+| `dataset_1` | 3.77% | 12.25% | 22.40% | 61.58% |
+| `dataset_2` | 3.04% | 12.14% | 20.10% | 64.72% |
+
+\\* The distribution for the label NSCLC here does not include the subclasses AC and SCC
 
 Contestants are expected to design a model for finding the bounding boxes for the samples and classify the diagnosed cells.
 
