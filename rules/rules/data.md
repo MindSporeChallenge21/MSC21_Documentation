@@ -54,7 +54,7 @@ images: obs:////
 
 labels: obs:////
 
-In the **dataset\_2** there are 4000 images, a CSV label file, and a metadata CSV file. A further description of the labels is in the [Dataset Description Section](data.md#dataset-description). Since you can only access the dataset through **Moxing Framework** in **ModelArts**, we highly encourage participants to use the ModelArts for Training, because it is faster and more efficient for experimentation.
+In the **dataset\_2** there are 4000 images, a CSV label file, and a metadata CSV file. This dataset contains all the data in **`dataset_1`** too. A further description of the labels is in the [Dataset Description Section](data.md#dataset-description). Since you can only access the dataset through **Moxing Framework** in **ModelArts**, we highly encourage participants to use the ModelArts for Training, because it is faster and more efficient for experimentation.
 
 ### [ModelArts Moxing Framework](https://support.huaweicloud.com/intl/en-us/moxing-devg-modelarts/modelarts\_11\_0003.html)
 
