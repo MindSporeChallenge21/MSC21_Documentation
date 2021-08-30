@@ -84,7 +84,7 @@ To facilitate some action in reading the dataset, we prepared the **`metadata.cs
 
 This file is created to support participants in working with the dataset.
 
-Be reminded that there are healthy samples in this dataset, which means images without any bounding boxes, this images will not have any column in the `labels.csv`, because they are healthy cells.
+Be reminded that there are healthy samples in this dataset, which means images without any bounding boxes, these healthy samples will not have any column in the `labels.csv`, because they are healthy cells.
 
 Contestants are expected to design a model for finding the bounding boxes for the samples and classify the diagnosed cells.
 
