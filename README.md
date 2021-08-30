@@ -6,33 +6,27 @@ description: >-
 
 # ✨ Getting Started
 
-![](.gitbook/assets/logos%20%282%29.png)
-
-
-<br>
-<br>
+![](.gitbook/assets/logos%20%282%29%20%281%29.png)
 
 ## 🔗 Official Links
 
-### 💻 <a href='https://mindsporechallenge.com/' target='_blank'> Website
+### 💻  Website
 
-#### <img src='.gitbook/assets/github-icon.png' width=22 align='left' style='padding-right: 6px'/> 
-### <a href="https://github.com/MindSporeChallenge21"> GitHub Repos </a>
+#### ![](.gitbook/assets/github-icon.png)
 
+### [GitHub Repos](https://github.com/MindSporeChallenge21)
 
-#### <img src='.gitbook/assets/discord-logo.png' width=22 align='left' style='padding-right: 6px'/> 
-### <a href="https://discord.gg/vNArdc2b"> Community </a>
+#### ![](.gitbook/assets/discord-logo.png)
 
-<br><br>
+### [Community](https://discord.gg/vNArdc2b)
 
 ## 📃 Useful Resources
 
-1. [MSC21 overview briefing]()
-2. [Mindspore Installation Guideline](./mindspore-tutorial/mindspore-installation-guide.md)
+1. [MSC21 overview briefing](./)
+2. [Mindspore Installation Guideline](mindspore-tutorial/mindspore-installation-guide.md)
 3. [Mindspore Tutorial Notebook](https://github.com/MindSporeChallenge21/resources/tree/main/notebook)
 4. [Training & Testing Guideline](training-and-testing/traintest.md)
-5. [Rule Book & Guidelines](rules/rules/README.md)
-
+5. [Rule Book & Guidelines](rules/rules/)
 
 ## 🖇 Useful Links
 
