@@ -37,7 +37,7 @@ The example below shows the images of IoP:
 
 | IoP=1 | IoP=0.6 | Multiple Io |
 | :--- | :--- | :--- |
-| ![](../../.gitbook/assets/5.png) | ![](../../.gitbook/assets/7%20%281%29.png) | ![](../../.gitbook/assets/6%20%281%29.png) |
+| ![](../../.gitbook/assets/5.png) | ![](../../.gitbook/assets/7%20%281%29%20%282%29%20%281%29.png) | ![](../../.gitbook/assets/6%20%281%29%20%282%29.png) |
 
 ### Classification
 
