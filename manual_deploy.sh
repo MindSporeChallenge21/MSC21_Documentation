@@ -1,6 +1,8 @@
 
 set -e
 
+npm i gitbook-plugin-mathjax-pro
+
 # install the plugins and build the static site
 gitbook install && gitbook build
 
