@@ -476,19 +476,14 @@
 <td style="text-align:left">Restricted Access</td>
 <td style="text-align:left">User access through Huawei Cloud&#x2019;s <a href="https://www.huaweicloud.com/en-us/product/obs.html" target="_blank">OBS</a>, in <a href="https://www.huaweicloud.com/intl/en-us/product/modelarts.html" target="_blank">ModelArts</a>.</td>
 </tr>
-<tr>
-<td style="text-align:left"><code>dataset_3</code></td>
-<td style="text-align:left">No</td>
-<td style="text-align:left">For Accuracy task, and Explainable task (with masks).</td>
-</tr>
 </tbody>
 </table>
 <h2 id="1-dataset-description----dataset1">1 Dataset Description  - <code>dataset_1</code></h2>
 <blockquote>
 <p>The data (<strong><code>dataset_1</code></strong>) can be obtained through the OBS bucket from Huawei Cloud of the following URL.</p>
 </blockquote>
-<p><a href="https://google.com" target="_blank">https:////</a></p>
-<p>In the <strong>dataset_1</strong> there are 500 images and a CSV label file in zipped format. The file structure for the datasets (<strong><code>dataset_1</code></strong>) are as below:</p>
+<p><a href="https://msc21-dataset1.obs.cn-north-4.myhuaweicloud.com/dataset_1.zip" target="_blank">https://msc21-dataset1.obs.cn-north-4.myhuaweicloud.com/dataset_1.zip</a></p>
+<p>In the <strong>dataset_1</strong> there are 500 images, a CSV label file, and a metadata CSV file in zipped format. The file structure for the datasets (<strong><code>dataset_1</code></strong>) are as below:</p>
 <ul>
 <li>images<ul>
 <li>sample_0001.bmp</li>
@@ -498,31 +493,152 @@
 </ul>
 </li>
 <li>labels.csv</li>
+<li>metadata.csv</li>
 </ul>
 <p>A further description of the labels is in the <a href="data.html#dataset-description">Dataset Description Section</a>.</p>
 <h2 id="2-dataset-description----dataset2">2 Dataset Description  - <code>dataset_2</code></h2>
 <blockquote>
 <p>The data (<strong><code>dataset_2</code></strong>) can be obtained through ModelArts Moxing Framework only. From Huawei Cloud&apos;s OBS Bucket</p>
 </blockquote>
-<p>images: obs:////</p>
-<p>labels: obs:////</p>
-<p>In the <strong>dataset_2</strong> there are 4000 images and a CSV label file. A further description of the labels is in the <a href="data.html#dataset-description">Dataset Description Section</a>. Since you can only access the dataset through <strong>Moxing Framework</strong> in <strong>ModelArts</strong>, we highly encourage participants to use the ModelArts for Training, because it is faster and more efficient for experimentation.</p>
+<p>dataset obs path: </p>
+<blockquote>
+<p>obs://msc21-dataset2/</p>
+</blockquote>
+<p>In the <strong>dataset_2</strong> there are 4000 images, a CSV label file, and a metadata CSV file. This dataset contains all the data in <strong><code>dataset_1</code></strong> too. </p>
+<p>A further description of the labels is in the <a href="data.html#dataset-description">Dataset Description Section</a>. Since you can only access the dataset through <strong>Moxing Framework</strong> in <strong>ModelArts</strong>, we highly encourage participants to use the ModelArts for Training, because it is faster and more efficient for experimentation.</p>
 <h3 id="modelarts-moxing-framework"><a href="https://support.huaweicloud.com/intl/en-us/moxing-devg-modelarts/modelarts\_11\_0003.html" target="_blank">ModelArts Moxing Framework</a></h3>
 <blockquote>
-<p>Further information for ModelArts and Moxing is in the training and testing guidelines</p>
+<p>Further information for ModelArts and Moxing is in the training and testing guidelines, this include the ways to import <code>dataset_2</code> and how to handle files on the ModelArts.</p>
 </blockquote>
-<p><a href="../../training-and-testing/traintest.html"></a></p>
-<h2 id="3-dataset-description----dataset3">3 Dataset Description  - <code>dataset_3</code></h2>
-<p>The <strong><code>dataset_3</code></strong> is specifically for evaluation purposes. Each image will be passed into the user-defined functions for evaluation purposes.</p>
-<p>This dataset also contains a set of masks for selected datasets, these mask contains information regarding the important parts for recognizing the labels. These masks will be compared against the saliency map produced in your code.</p>
 <h2 id="&#x1F522;-dataset-description">&#x1F522; Dataset Description</h2>
 <p>The images are in <code>.bmp</code> format, which can be easily read by common python packages.</p>
-<p>The labels contain few columns namely:</p>
+<p>The <strong><code>labels.csv</code></strong> contain few columns namely:</p>
 <blockquote>
 <p><strong><code>image_id, xmin, ymin, xmax, ymax, scc, ac, sclc, nsclc</code></strong></p>
 </blockquote>
 <p>The labels (<strong><code>xmin</code></strong>, <strong><code>ymin</code></strong>, <strong><code>xmax</code></strong>, <strong><code>ymax</code></strong>) will be floating-point numbers between 0 and 1. For the x-axis, the related columns are <code>xmin</code> and <code>xmax</code>, the value 0 corresponds to the left side of the image, and 1 corresponds to the right side of the image. For the y-axis, the same idea applies, but with 0 value at the top of the image and 1 at the bottom corner of the image.</p>
 <p>The classes (<strong><code>scc</code></strong>, <strong><code>ac</code></strong>, <strong><code>sclc</code></strong>, <strong><code>nsclc</code></strong>) is the classification of the cancer cells because there are multiple classes per cell (multi-label classification problem), each class has a column with value 1 if the bounding boxes belong to the class. With the <strong><code>image_id</code></strong> the image filename can be obtained by concatenating the <strong><code>image_id</code></strong> with the <strong><code>.bmp</code></strong> file extension.</p>
+<p>To facilitate some action in reading the dataset, we prepared the <strong><code>metadata.csv</code></strong> file, this file contains the metadata of the images with the columns namely:</p>
+<blockquote>
+<p><strong><code>image_id, width, height, bbox_count</code></strong></p>
+</blockquote>
+<p>This file is created to support participants in working with the dataset.</p>
+<p>Be reminded that there are healthy samples in this dataset, which means images without any bounding boxes, these healthy samples will not have any column in the <code>labels.csv</code>, because they are healthy cells.</p>
+<p>Image Count in datasets are as below:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Dataset</th>
+<th style="text-align:left">Image Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>dataset_1</code></td>
+<td style="text-align:left">1000</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>dataset_2</code></td>
+<td style="text-align:left">3000</td>
+</tr>
+</tbody>
+</table>
+<p>The bounding box count distribution for each dataset are as below:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Bounding Box Count</th>
+<th style="text-align:left">Percentage in <code>dataset_1</code></th>
+<th style="text-align:left">Percentage in <code>dataset_2</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">0 (Healthy Samples)</td>
+<td style="text-align:left">32.40%</td>
+<td style="text-align:left">33.30%</td>
+</tr>
+<tr>
+<td style="text-align:left">1</td>
+<td style="text-align:left">28.70%</td>
+<td style="text-align:left">27.93%</td>
+</tr>
+<tr>
+<td style="text-align:left">2</td>
+<td style="text-align:left">16.50%</td>
+<td style="text-align:left">17.87%</td>
+</tr>
+<tr>
+<td style="text-align:left">3</td>
+<td style="text-align:left">12.10%</td>
+<td style="text-align:left">9.43%</td>
+</tr>
+<tr>
+<td style="text-align:left">4</td>
+<td style="text-align:left">5.20%</td>
+<td style="text-align:left">5.10%</td>
+</tr>
+<tr>
+<td style="text-align:left">5</td>
+<td style="text-align:left">1.90%</td>
+<td style="text-align:left">2.70%</td>
+</tr>
+<tr>
+<td style="text-align:left">6</td>
+<td style="text-align:left">1.00%</td>
+<td style="text-align:left">1.73%</td>
+</tr>
+<tr>
+<td style="text-align:left">7</td>
+<td style="text-align:left">0.50%</td>
+<td style="text-align:left">0.77%</td>
+</tr>
+<tr>
+<td style="text-align:left">8</td>
+<td style="text-align:left">0.30%</td>
+<td style="text-align:left">0.27%</td>
+</tr>
+<tr>
+<td style="text-align:left">9</td>
+<td style="text-align:left">0.30%</td>
+<td style="text-align:left">0.33%</td>
+</tr>
+<tr>
+<td style="text-align:left">10</td>
+<td style="text-align:left">0.11%</td>
+<td style="text-align:left">0.57%</td>
+</tr>
+</tbody>
+</table>
+<p>The label&apos;s distribution of all bounding box for the datasets are as below:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Dataset</th>
+<th style="text-align:left">SCC</th>
+<th style="text-align:left">AC</th>
+<th style="text-align:left">SCLC</th>
+<th style="text-align:left">NSCLC</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>dataset_1</code></td>
+<td style="text-align:left">3.77%</td>
+<td style="text-align:left">12.25%</td>
+<td style="text-align:left">22.40%</td>
+<td style="text-align:left">61.58%</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>dataset_2</code></td>
+<td style="text-align:left">3.04%</td>
+<td style="text-align:left">12.14%</td>
+<td style="text-align:left">20.10%</td>
+<td style="text-align:left">64.72%</td>
+</tr>
+</tbody>
+</table>
+<p>\* The distribution for the label NSCLC here does not include the subclasses AC and SCC</p>
 <p>Contestants are expected to design a model for finding the bounding boxes for the samples and classify the diagnosed cells.</p>
 <h2 id="&#x1F50F;-dataset-terms-and-conditions">&#x1F50F; Dataset Terms and Conditions</h2>
 <blockquote>
@@ -588,7 +704,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Data","level":"2.1.6","depth":2,"next":{"title":"Evaluation Criteria","level":"2.1.7","depth":2,"path":"rules/rules/evaluation-criteria.md","ref":"rules/rules/evaluation-criteria.md","articles":[]},"previous":{"title":"Programming Environment","level":"2.1.5","depth":2,"path":"rules/rules/programming-environment.md","ref":"rules/rules/programming-environment.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"rules/rules/data.md","mtime":"2021-08-26T04:01:02.173Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-08-26T06:12:24.548Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Data","level":"2.1.6","depth":2,"next":{"title":"Evaluation Criteria","level":"2.1.7","depth":2,"path":"rules/rules/evaluation-criteria.md","ref":"rules/rules/evaluation-criteria.md","articles":[]},"previous":{"title":"Programming Environment","level":"2.1.5","depth":2,"path":"rules/rules/programming-environment.md","ref":"rules/rules/programming-environment.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"rules/rules/data.md","mtime":"2021-08-31T03:42:01.036Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-08-31T05:57:04.684Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
