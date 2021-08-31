@@ -10,7 +10,7 @@ description: >-
 
 ## 🔗 Official Links
 
-### 💻  Website  ![](.gitbook/assets/github-icon%20%281%29.png)[GitHub Repos](https://github.com/MindSporeChallenge21) ![](.gitbook/assets/discord-logo.png)[Community](https://discord.com/invite/SDpVGMxpWe)
+### 💻  Website   [GitHub Repos](https://github.com/MindSporeChallenge21)  [Discord Community](https://discord.com/invite/SDpVGMxpWe)
 
 ## 📃 Useful Resources
 
