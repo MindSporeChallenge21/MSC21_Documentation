@@ -430,16 +430,16 @@ IoP = \frac{\text{area over intersection}}{\text{area of prediction}} = \frac{T 
 <table>
 <thead>
 <tr>
-<th>IoP=1</th>
-<th>IoP=0.6</th>
-<th>Multiple Io</th>
+<th style="text-align:left">IoP=1</th>
+<th style="text-align:left">IoP=0.6</th>
+<th style="text-align:left">Multiple Io</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><img src="../../.gitbook/assets/5.png" alt=""></td>
-<td><img src="../../.gitbook/assets/7%20%281%29.png" alt=""></td>
-<td><img src="../../.gitbook/assets/6%20%281%29.png" alt=""></td>
+<td style="text-align:left"><img src="../../.gitbook/assets/5.png" alt=""></td>
+<td style="text-align:left"><img src="../../.gitbook/assets/7%20%281%29.png" alt=""></td>
+<td style="text-align:left"><img src="../../.gitbook/assets/6%20%281%29.png" alt=""></td>
 </tr>
 </tbody>
 </table>
@@ -459,7 +459,7 @@ IoP = \frac{\text{area over intersection}}{\text{area of prediction}} = \frac{T 
 <p>The task is based on the output of a saliency map; In the <strong><code>dataset_3</code></strong> there are masks for the labels, which highlight specific importances of the images. Your goal is to create a saliency map to be scored with the masks. There is no dataset provided for you to optimize the explainable score because this is based on the model&#x2019;s performance.</p>
 <p>MindSpore provides an interesting toolkit called <a href="https://www.mindspore.cn/doc/api_python/zh-CN/r1.2/mindspore/mindspore.explainer.html%20" target="_blank"><strong><code>mindspore.explainer</code></strong></a>which accepts a model and outputs a saliency map. You need to utilize this toolkit and return the saliency map in the evaluation task.</p>
 <p>If you have successfully completed the requirements we will score your result against the masks of the images with the <a href="https://towardsdatascience.com/understanding-auc-roc-curve-68b2303cc9c5%20" target="_blank">AUC - ROC Curve formula</a>.</p>
-<h3 id="mindspore-explainer-"><a href="https://www.mindspore.cn/doc/api\_python/zh-CN/r1.2/mindspore/mindspore.explainer.html" target="_blank"> Mindspore Explainer </a></h3>
+<h3 id="mindspore-explainer"><a href="https://www.mindspore.cn/doc/api\_python/zh-CN/r1.2/mindspore/mindspore.explainer.html" target="_blank">Mindspore Explainer</a></h3>
 <h2 id="&#x1F3C5;-final-score">&#x1F3C5; Final Score</h2>
 <p>The final ranking is measured with the combination of both tasks</p>
 <p>$$
@@ -594,7 +594,7 @@ IoP = \frac{\text{area over intersection}}{\text{area of prediction}} = \frac{T 
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Evaluation Criteria","level":"2.1.7","depth":2,"next":{"title":"Submission Detail","level":"2.1.8","depth":2,"path":"rules/rules/submission-detail.md","ref":"rules/rules/submission-detail.md","articles":[]},"previous":{"title":"Data","level":"2.1.6","depth":2,"path":"rules/rules/data.md","ref":"rules/rules/data.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"rules/rules/evaluation-criteria.md","mtime":"2021-08-26T06:07:26.367Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-08-26T06:12:24.548Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Evaluation Criteria","level":"2.1.7","depth":2,"next":{"title":"Submission Detail","level":"2.1.8","depth":2,"path":"rules/rules/submission-detail.md","ref":"rules/rules/submission-detail.md","articles":[]},"previous":{"title":"Data","level":"2.1.6","depth":2,"path":"rules/rules/data.md","ref":"rules/rules/data.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"rules/rules/evaluation-criteria.md","mtime":"2021-08-31T03:58:24.563Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-08-31T04:01:08.830Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

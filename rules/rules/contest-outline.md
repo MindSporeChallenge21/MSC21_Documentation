@@ -8,15 +8,9 @@ This is a team contest, with each team having a **maximum of 3 members**. Every 
 
 In the first round, you will receive a **score** based on the model you submitted. Shortlisted candidates will **advance to the final round**, consisting of **pitching**, reporting, and business application presentation.
 
-<br>
-<br>
-
 ## 👨🏭 Workshop
 
 This contest will conduct a series of training events in the first-round competition so that participants can learn and become proficient in developing AI models using MindSpore from scratch. The Science Park will provide the physical training space as well as managing the online session.
-
-<br>
-<br>
 
 ## ❓ Problems
 
@@ -25,9 +19,6 @@ This contest will conduct a series of training events in the first-round competi
 Participants will use **MindSpore** as the **AI training and inference framework** to train a privacy-assured, robust, and highly accurate AI pathology model using a large amount of rich pathology image data provided by Guangzhou Ambipin \(LBP\) Medicine Sci. & Tech.
 
 ### [Problem Detail](problems.md)
-
-<br>
-<br>
 
 ## ⬆ Submissions
 
