@@ -212,7 +212,7 @@ An **entry point file** needs to export specific functionalities for the evaluat
 
 > `CHW` implies \(C\)Channel first, then the \(H\)Height dimension, and finally the \(W\)Width dimension. Eg. of an image shape would be \(3, 720, 1280\) for a 720p RGB image
 >
-> Some of the libraries might not be supported by **ModelArts** \(evaluation system\), participants are required to find alternatives or email an **inquiry to** ~~**XXX**~~, and participants can use the ModelArts account provided for training models to test the submitted code, the environment for the evaluation system is supposed to be the same.
+> Some of the libraries might not be supported by **ModelArts** \(evaluation system\), participants are required to find alternatives or email an **inquiry to** [**support@mindsporechallenge.com**](mailto://support@mindsporechallenge.com) **/** [**Discord**](https://discord.com/invite/SDpVGMxpWe), and participants can use the ModelArts account provided for training models to test the submitted code, the environment for the evaluation system is supposed to be the same.
 
 The sample submission code file is as below:
 

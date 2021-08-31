@@ -18,5 +18,5 @@ The above working examples allow participants to have a starting sandbox for the
 
 The contestant can send messages to Discord to report or ask questions regarding MindSpore, Python, and the Submission of this competition.
 
-> Our evaluation server supports only _**common libraries**_ that exist on **ModelArts**, if there are specific libraries that you may need for the evaluation, please send the inquiries to Discord for the specific request.
+> Our evaluation server supports only _**common libraries**_ that exist on **ModelArts**, if there are specific libraries that you may need for the evaluation, please send the inquiries to [Discord](https://discord.com/invite/SDpVGMxpWe) for the specific request.
 
