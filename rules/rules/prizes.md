@@ -20,7 +20,7 @@ Cash prizes will be awarded in Hong Kong dollars and may be delivered in the for
 
 The participant will be eligible for the Special Prize for the Explainability if:
 
-1. Emailed/Discord the source code of training to XXX.
+1. Emailed/[Discord](https://discord.com/invite/SDpVGMxpWe) the source code of training to [support@mindsporechallenge.com](mailto://support@mindsporechallenge.com).
 2. Attempted the Explainability Task.
 
 > _Attempted here implies: Participants have utilized the MindSpore Explainer library, and have successfully evaluated in the explainability task, regardless of the score \(0 is acceptable\)._

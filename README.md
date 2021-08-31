@@ -23,7 +23,7 @@ description: >-
 ## 🖇 Useful Links
 
 1. [MindSpore Tutorial](https://www.mindspore.cn/tutorials/en/r1.3/index.html)
-2. [ModelArts Tutorial](https://support.huaweicloud.com/en-us/qs-modelarts/modelarts_06_0001.html)
+2. [ModelArts Tutorial](https://support.huaweicloud.com/intl/en-us/modelarts/index.html)
 3. [OBS Tutorial](https://support.huaweicloud.com/intl/en-us/obs/index.html)
 4. [MindSpore CV-related source code](https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/cv)
 

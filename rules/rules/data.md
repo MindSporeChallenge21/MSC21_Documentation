@@ -16,7 +16,6 @@ The classification is as follow:
 | Index | 0 | 1 | 2 | 3 |
 | Sub-class | NSCLC | NSCLC |  |  |
 | Example Sample | ![](../../.gitbook/assets/0%20%281%29.png) | ![](../../.gitbook/assets/1.png) | ![](../../.gitbook/assets/2%20%281%29.png) | ![](../../.gitbook/assets/3%20%281%29.png) |
-| Count in dataset\_1 |  |  |  |  |
 
 ## 🏬 Datasets
 
@@ -57,7 +56,7 @@ In the **dataset\_2** there are 4000 images, a CSV label file, and a metadata CS
 
 A further description of the labels is in the [Dataset Description Section](data.md#dataset-description). Since you can only access the dataset through **Moxing Framework** in **ModelArts**, we highly encourage participants to use the ModelArts for Training, because it is faster and more efficient for experimentation.
 
-### [ModelArts Moxing Framework](https://support.huaweicloud.com/intl/en-us/moxing-devg-modelarts/modelarts\_11\_0003.html)
+### [ModelArts Moxing Framework](https://support.huaweicloud.com/intl/en-us/moxing-devg-modelarts/modelarts_11_0001.html)
 
 > Further information for ModelArts and Moxing is in the training and testing guidelines, this include the ways to import `dataset_2` and how to handle files on the ModelArts.
 

@@ -269,13 +269,9 @@ def saliency_map(
 
 Participants can use this template to complete the code submission on the website:
 
-> [https:////](https:////)
+> [https://mindsporechallenge.com/submission](https://mindsporechallenge.com/submission/index)
 
 ## 🆙 Submit Code to MSC21 Platform
-
-### Location
-
-[https://this.place.to.submit.com](https://this.place.to.submit.com)
 
 ### Accepted Format
 
@@ -333,19 +329,19 @@ for image_id, image in data:
    xai_esults.append(xai_result)
 ```
 
-The above code will be run in the ModelArts Atlas 910 for faster inference in the **`dataset_3`**. But due to the limitation of this competition, the participants are required to reduce the complexity of the model. Any model trained for more than **60 minutes** will be terminated, and the scoring will not be considered. The participants can only submit **XXX times per day**.
+The above code will be run in the ModelArts Atlas 910 for faster inference. But due to the limitation of this competition, the participants are required to reduce the complexity of the model. Any model tested for more than **120 minutes** will be terminated, and the scoring will not be considered. The participants can only submit **30 times throughout the competition**.
 
 ## 🏅 Ranking
 
 After submission, participants can view their ranking in the following URL:
 
-> [https:////](https:////)
+> [https://mindsporechallenge.com/history](https://mindsporechallenge.com/history)
 
 Teams will submit their solution for each round through the Competition Portal. _Only one submission can be run at any time_ and teams may submit more than one submission as long as they do not interfere with the proper functioning of the competition. Only the highest-scoring submission will be considered.
 
 ## 🏁 Final Round Submission
 
-If participants successfully entered the Final Round, participants are required to **email** the following documents to the XXX before XXX :
+If participants successfully entered the Final Round, participants are required to **email** the following documents to the `support@mindsporechallenge.com` before **08 October 2021** :
 
 1. Codebases, containing Jupyter Notebook explaining the model design methodology
 2. Presentations
