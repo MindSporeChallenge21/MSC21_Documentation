@@ -18,7 +18,7 @@ description: >-
 
 #### ![](.gitbook/assets/discord-logo.png)
 
-### [Community](https://discord.gg/vNArdc2b)
+### [Community](https://discord.com/invite/SDpVGMxpWe)
 
 ## 📃 Useful Resources
 
