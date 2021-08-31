@@ -16,6 +16,7 @@ And a prominent figure in academic research is in charge of enforcing the Terms 
 
 > Each contestant’s model will be scored based on the classification accuracy
 
+
 There are two evaluation tasks to be completed, namely the **accuracy and explainable tasks**. To rank higher in the leaderboard, teams are encouraged to design the model to maximize individual value. This part of the explanation will introduce the classification evaluation formula.
 
 Check out your leaderboard now!! ➡
@@ -35,9 +36,9 @@ $$
 
 The example below shows the images of IoP:
 
-| IoP=1 | IoP=0.6 | Multiple Io |
-| :--- | :--- | :--- |
-| ![](../../.gitbook/assets/5.png) | ![](../../.gitbook/assets/7%20%281%29.png) | ![](../../.gitbook/assets/6%20%281%29.png) |
+| IoP=1             |  IoP=0.6 | Multiple Io |
+| ------------------------- | ------------------------- | ------ |
+| ![](../../.gitbook/assets/5.png) | ![](../../.gitbook/assets/7%20%281%29.png) |  ![](../../.gitbook/assets/6%20%281%29.png) |
 
 ### Classification
 
@@ -57,6 +58,7 @@ Where M, refers to the classes.
 
 > Given that each ground truth box can only pair with one prediction box, and the prediction box will always pair with one of the IoP maxima to the ground truth box if the ground truth box is taken; this prediction is ignored, ie. Not considered as a _false positive_
 
+
 ## 📈 Explainable \(XAI\)
 
 The task is based on the output of a saliency map; In the **`dataset_3`** there are masks for the labels, which highlight specific importances of the images. Your goal is to create a saliency map to be scored with the masks. There is no dataset provided for you to optimize the explainable score because this is based on the model’s performance.
@@ -65,7 +67,7 @@ MindSpore provides an interesting toolkit called [**`mindspore.explainer`**](htt
 
 If you have successfully completed the requirements we will score your result against the masks of the images with the [AUC - ROC Curve formula](https://towardsdatascience.com/understanding-auc-roc-curve-68b2303cc9c5%20).
 
-### [Mindspore Explainer](https://www.mindspore.cn/doc/api\_python/zh-CN/r1.2/mindspore/mindspore.explainer.html)
+### <a href="https://www.mindspore.cn/doc/api\_python/zh-CN/r1.2/mindspore/mindspore.explainer.html" target="_blank"> Mindspore Explainer </a>
 
 ## 🏅 Final Score
 

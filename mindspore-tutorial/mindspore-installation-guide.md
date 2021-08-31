@@ -46,6 +46,7 @@ make -j 12 && sudo make install -j 12
 
 > Make, `-j` to run multiple make target at once because this process takes time!
 
+
 After make the GCC should be installed properly. Now we want to replace the GCC on the current machine with a new one\(7.3.0\) by using a soft link.
 
 ```bash
@@ -86,8 +87,10 @@ sudo make install
 ```
 
 > if you failed at `zlib not available problem` please run `sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev xz-utils tk-dev libffi-dev liblzma-dev python-openssl openssl`
->
+
+
 > if `pip3` failed at installing things due to SSL problems please run `./configure --with-ssl && make && sudo make install`
+
 
 Test your installation
 
@@ -108,11 +111,14 @@ pip3 install jupyterlab
 ```
 
 > if pip failed due to SSL problem please check References 1
->
+
+
 > if pip failed due to permissions  
-> use `--user` flag
->
+use `--user` flag
+
+
 > Futher problem on installation need to check if jupyter is added into `$PATH` or run the command as sudo. \(ie. `sudo pip3 install jupyterlab`\)
+
 
 Test the installation with
 

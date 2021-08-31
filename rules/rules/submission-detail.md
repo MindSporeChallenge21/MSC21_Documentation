@@ -4,6 +4,7 @@ In the **Qualification Round**, each contestant’s submission will be tested by
 
 > Please follow the structure listed on the submission detail to ensure your score
 
+
 ## ℹ Submission Format
 
 The contestants' goal is to submit a **Python code file/zip** and a **MindSpore checkpoint file** where it will be run on Ascend 910 for inference on the dataset. The Python code has some requirements that need to be accomplished.
@@ -211,8 +212,10 @@ An **entry point file** needs to export specific functionalities for the evaluat
 </table>
 
 > `CHW` implies \(C\)Channel first, then the \(H\)Height dimension, and finally the \(W\)Width dimension. Eg. of an image shape would be \(3, 720, 1280\) for a 720p RGB image
->
+
+
 > Some of the libraries might not be supported by **ModelArts** \(evaluation system\), participants are required to find alternatives or email an **inquiry to** ~~**XXX**~~, and participants can use the ModelArts account provided for training models to test the submitted code, the environment for the evaluation system is supposed to be the same.
+
 
 The sample submission code file is as below:
 
@@ -273,6 +276,8 @@ Participants can use this template to complete the code submission on the websit
 
 ## 🆙 Submit Code to MSC21 Platform
 
+[](../../training-and-testing/traintest.md)
+
 ### Location
 
 [https://this.place.to.submit.com](https://this.place.to.submit.com)
@@ -283,6 +288,7 @@ Participants can use this template to complete the code submission on the websit
 * **All codes in a zip/tarball**
 
 > Supported formats of zip/tarball, _.tar.bz2, .tbz2, .tar.gz, .tgz, .tar, .tar.xz, .txz, .zip_
+
 
 If a zip/tarball file is submitted instead, We will unzip the file and find the entry point Python code. We will traverse the folder to find the **participant\_model.py** file, this file is the entry point of the code. We expect this file to be in the _root or any first-level directory_. If there are multiple files of the same name, we might have problems finding the one that we needed, it’s the participant's responsibility to keep this from not happening.
 
@@ -351,6 +357,7 @@ If participants successfully entered the Final Round, participants are required 
 2. Presentations
 
 > **Late submission will not be entertained**, and participants will be considered opting out of the competition.
+
 
 All submissions must be derived from participants' work, and any use of code from other parties that are not of team members required a citation. The authority should also be added to the presentation for the final round.
 

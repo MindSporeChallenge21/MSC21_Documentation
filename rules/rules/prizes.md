@@ -25,6 +25,7 @@ The participant will be eligible for the Special Prize for the Explainability if
 
 > _Attempted here implies: Participants have utilized the MindSpore Explainer library, and have successfully evaluated in the explainability task, regardless of the score \(0 is acceptable\)._
 
+
 ## 🛒 Delivery
 
 The organizers may ship your non-monetary prizes \(e.g. souvenirs\) to you or request you to pick up your package at the designated location. If the organizers notify you that your package will be shipped to you and you have not received your prize within six \(6\) months of the end of the contest, please contact the organizers at the email address and through Discord specified on the contest website. If the notice is more than nine \(9\) months after the end of the contest, the organizers will not award any prizes.
