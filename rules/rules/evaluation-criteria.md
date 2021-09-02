@@ -11,7 +11,7 @@ The “**juries**” consist of:
 
 And prominent figures in academic and medical research are in charge of enforcing the Terms and the Rules concerning the Contest. The Jury will review the submissions and pitching of each Team, perform scoring and ranking of the competition. At its sole discretion, the Jury may decide to disqualify participants or teams who do not follow the Terms or the Rules.
 
-## 💯 Soring for Qualification Round
+## 💯 Soring for Evaluation Stage
 
 > Each team's model will be scored based on the accuracy score and explainable score.
 
@@ -76,7 +76,7 @@ $$
 
 ### Scoring for Final Round
 
-The **top 6 teams in the Qualification Round** will be selected to participate in the **Final Pitching**.
+The **top 6 teams in the Evaluation Stage** will be selected to participate in the **Final Pitching**.
 
 Each team of the final round is to present the following details for their project. The following structure is a reference for the contestants; participants are free to structure their presentations. The time for the presentation is 20 mins. Pitching for 15 minutes and a Q&A session for 5 minutes.
 
