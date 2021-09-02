@@ -4,9 +4,9 @@
 
 The organizers will notify each team about whether they have qualified for any first round and the final prize. All decisions by the jury regarding prize winners are final and binding and no correspondence will be entered into regarding prizes.
 
-## 💸 Cash Prize
+## 💸 Prize
 
-Cash prizes will be awarded in Hong Kong dollars and may be delivered in the form of **cash, coupon, or other cash equivalents**. Participants are responsible for any costs associated with currency exchange.
+Prizes will be awarded in Hong Kong dollars and may be delivered in the form of **cash, coupon, or other  equivalent gifts**. 
 
 ### Prize Details
 
