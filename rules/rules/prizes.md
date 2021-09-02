@@ -2,7 +2,7 @@
 
 ## 🎊 Prize Winner
 
-The organizers will notify each team about whether they have qualified for entering the Final Pitching and awarding the final prize. All decisions by the jury regarding prize winners are final and binding and no correspondence will be entered into regarding prizes.
+The organizers will notify each team about whether they have qualified for any first round and the final prize. All decisions by the jury regarding prize winners are final and binding and no correspondence will be entered into regarding prizes.
 
 ## 💸 Prize
 
