@@ -1,12 +1,12 @@
 # Submission Detail
 
-In the **Qualification Round**, each contestant’s submission will be tested by the evaluation queue and every contestant should submit their results following the format below.
+In the **Evaluation Stage**, each submission will be tested by the evaluation queue and every contestant should submit their results following the format below.
 
-> Please follow the structure listed on the submission detail to ensure your score
+> Please follow the structure listed on the submission detail to ensure your score.
 
 ## ℹ Submission Format
 
-The contestants' goal is to submit a **Python code file/zip** and a **MindSpore checkpoint file** where it will be run on Ascend 910 for inference on the dataset. The Python code has some requirements that need to be accomplished.
+The contestants' goal is to submit a **Python code file/zip** and a **MindSpore checkpoint file** where it will be run on Ascend 910 for inference on a dataset. The Python code has some requirements that need to be accomplished.
 
 1. Python code \(**participant\_model.py**\) will need to describe the model structure, preprocessing and postprocessing, and the saliency map.
 2. A Checkpoint \(**.ckpt**\) file will [save model parameters](https://www.mindspore.cn/tutorial/training/en/r1.2/use/save_model.html) for inference and retraining after interruption.
@@ -339,9 +339,9 @@ After submission, participants can view their ranking in the following URL:
 
 Teams will submit their solution for each round through the Competition Portal. _Only one submission can be run at any time_ and teams may submit more than one submission as long as they do not interfere with the proper functioning of the competition. Only the highest-scoring submission will be considered.
 
-## 🏁 Final Round Submission
+## 🏁 Final Pitching Submission
 
-If participants successfully entered the Final Round, participants are required to **email** the following documents to the `support@mindsporechallenge.com` before **08 October 2021** :
+If participants successfully entered the Final Pitching, participants are required to **email** the following documents to the `support@mindsporechallenge.com` before **20 October 2021, 23:59:59 \(UTC +8\)** :
 
 1. Codebases, containing Jupyter Notebook explaining the model design methodology
 2. Presentations

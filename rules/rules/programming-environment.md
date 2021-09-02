@@ -8,7 +8,7 @@
 
 ## 🛠 Workshops, Training Sessions!
 
-Contestants are expected to participate in the training session provided by the organizers to understand how to operate with the dataset, design models, training, and evaluation of the model. The training and evaluation process will only be running efficiently if the scripts are written correctly, and the MindSpore Ascend version of operators will significantly speed up your development and evaluation, which leads to faster experimentation cycles.
+Contestants are expected to participate in the training sessions provided by the organizers to understand how to operate with the dataset, design models, training, and evaluation of the model. The training and evaluation process will only be running efficiently if the scripts are written correctly, and the MindSpore Ascend version of operators will significantly speed up your development and evaluation, which leads to faster experimentation cycles.
 
 ## Example
 

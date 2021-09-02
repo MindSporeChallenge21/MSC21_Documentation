@@ -19,11 +19,11 @@ The classification is as follow:
 
 ## 🏬 Datasets
 
-There are a few subsets of datasets. The primary dataset for user training and validation is **`dataset_1`**. This dataset contains 500 images.
+There are a few subsets of datasets. The primary dataset for user training and validation is **`dataset_1`**. This dataset contains 1000 images.
 
 | **Dataset Name** | **Publicly Accessible** | **Description** |
 | :--- | :--- | :--- |
-| `dataset_1` | Yes | 500 data points for experimentation and model design. |
+| `dataset_1` | Yes | 1000 images for experimentation and model design. |
 | `dataset_2` | Restricted Access | User access through Huawei Cloud’s [OBS](https://www.huaweicloud.com/en-us/product/obs.html), in [ModelArts](https://www.huaweicloud.com/intl/en-us/product/modelarts.html). |
 
 ## 1 Dataset Description  - `dataset_1`
@@ -32,13 +32,13 @@ There are a few subsets of datasets. The primary dataset for user training and v
 
 [https://msc21-dataset1.obs.cn-north-4.myhuaweicloud.com/dataset\_1.zip](https://msc21-dataset1.obs.cn-north-4.myhuaweicloud.com/dataset_1.zip)
 
-In the **dataset\_1** there are 500 images, a CSV label file, and a metadata CSV file in zipped format. The file structure for the datasets \(**`dataset_1`**\) are as below:
+In the **dataset\_1** there are 1000 images, a CSV label file, and a metadata CSV file in zipped format. The file structure for the datasets \(**`dataset_1`**\) are as below:
 
 * images
-  * sample\_0001.bmp
+  * sample\_0000.bmp
   * sample\_0002.bmp
   * …
-  * sample\_0500.bmp
+  * sample\_0999.bmp
 * labels.csv
 * metadata.csv
 
@@ -52,9 +52,9 @@ dataset obs path:
 
 > obs://msc21-dataset2/
 
-In the **dataset\_2** there are 4000 images, a CSV label file, and a metadata CSV file. This dataset contains all the data in **`dataset_1`** too. 
+In the **dataset\_2** there are 3000 images, a CSV label file, and a metadata CSV file.  
 
-A further description of the labels is in the [Dataset Description Section](data.md#dataset-description). Since you can only access the dataset through **Moxing Framework** in **ModelArts**, we highly encourage participants to use the ModelArts for Training, because it is faster and more efficient for experimentation.
+A further description of the labels is in the [Dataset Description Section](data.md#dataset-description). Since you can only access the dataset through **Moxing Framework** in **ModelArts**, we highly encourage participants to use ModelArts for model training, because it is faster and more efficient for experimentation.
 
 ### [ModelArts Moxing Framework](https://support.huaweicloud.com/intl/en-us/moxing-devg-modelarts/modelarts_11_0001.html)
 
@@ -132,5 +132,5 @@ Commercial purposes include, but are not limited to:
 3. Selling a subset of data or the preprocessed forms of data from the dataset.
 4. Creating military applications.
 
-The **LBP Medicine** reserves the right to modify and change this dataset and the section Data Terms and Conditions in this Rule Book and Guidelines for MindSpore Pathology Diagnosis Challenge. This dataset comes without any warranty, and LBP Medicine cannot be held accountable for any damage \(physical, financial, or otherwise\) caused by the use of this dataset.
+The **LBP Medicine** reserves the right to modify and change this dataset and the section Dataset Terms and Conditions in this Rule Book and Guidelines for MindSpore Challenge - Pathology Diagnosis . This dataset comes without any warranty, and LBP Medicine cannot be held accountable for any damage \(physical, financial, or otherwise\) caused by the use of this dataset.
 

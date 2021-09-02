@@ -35,7 +35,7 @@ You will forfeit your attendance at the final round and/or your prize, and an al
 
 1. You fail to provide a valid phone number or transfer information during registration or any other information requested by the organizer.
 2. You fail to respond to any form of notification of your final round eligibility or prize within 10 days.
-3. You are absent from the final round pitching or closing ceremony for receiving the prize.
+3. You are absent from the final pitching or award ceremony for receiving the prize.
 
 The organizers will not be responsible for any failure in the efforts to notify winners. The organizers may award its prize to another participant if the winner refuses to accept the prize, does not respond to the prize notification, fails to claim the prize in the prescribed manner, fails to comply with any terms or rules of any contest, or is ineligible to claim the prize.
 
