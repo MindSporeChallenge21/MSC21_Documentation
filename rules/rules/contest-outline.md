@@ -16,7 +16,7 @@ This contest will conduct a series of training events in the first-round competi
 
 > You will access the detailed problem and data on the competition portal when the contest begins, or refer to the Problems Section.
 
-Participants will use **MindSpore** as the **AI training and inference framework** to train a privacy-assured, robust, and highly accurate AI pathology model using a large amount of rich pathology image data provided by Guangzhou Ambipin \(LBP\) Medicine Sci. & Tech.
+Participants will use **MindSpore** as the **AI training and inference framework** to train a privacy-assured, robust, and highly accurate AI pathology model using a large amount of rich pathology image data provided by Guangzhou AnBiPing \(LBP\) Medicine Sci. & Tech.
 
 ### [Problem Detail](problems.md)
 
