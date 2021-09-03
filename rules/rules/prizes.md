@@ -6,7 +6,7 @@ The organizers will notify each team about whether they have qualified for any f
 
 ## 💸 Prize
 
-Prizes will be awarded in Hong Kong dollars and may be delivered in the form of **cash, coupon, or other  equivalent gifts**. 
+Prizes will be awarded in Hong Kong dollars and may be delivered in the form of **cash, coupon, or other equivalent gifts**.
 
 ### Prize Details
 
