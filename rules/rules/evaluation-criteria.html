@@ -400,25 +400,24 @@
                                 
                                 <h1 id="evaluation-criteria">Evaluation Criteria</h1>
 <h2 id="&#x1F468;&#x2696;-judging">&#x1F468;&#x2696; Judging</h2>
-<p>There are two phases in this competition: the online <strong>Qualification Round</strong> and the offline <strong>Final Round</strong>. In the final round, there will be judges from different academic backgrounds. Participants are expected to show maturity in the design of their algorithms, neural network, and describe their methodology.</p>
+<p>There are two stages in this competition: the <strong>Evaluation Stage</strong> and the <strong>Final Pitching</strong>. In the final pitching, there will be judges from different academic backgrounds. Participants are expected to show maturity in the design of their algorithms, neural network, and describe their methodology.</p>
 <p>The &#x201C;<strong>juries</strong>&#x201D; consist of:</p>
 <ul>
-<li>Huawei HKRC</li>
+<li>Huawei </li>
 <li>HKSTP</li>
-<li>LBP Medicine</li>
 </ul>
-<p>And a prominent figure in academic research is in charge of enforcing the Terms and the Rules concerning the Contest. The Jury will review the submissions and pitching of each Team, perform scoring and ranking of the competition. At its sole discretion, the Jury may decide to disqualify participants or Teams who do not follow the Terms or the Rules.</p>
-<h2 id="&#x1F4AF;-soring-for-qualification-round">&#x1F4AF; Soring for Qualification Round</h2>
+<p>And prominent figures in academic and medical research are in charge of enforcing the Terms and the Rules concerning the Contest. The Jury will review the submissions and pitching of each Team, perform scoring and ranking of the competition. At its sole discretion, the Jury may decide to disqualify participants or teams who do not follow the Terms or the Rules.</p>
+<h2 id="&#x1F4AF;-soring-for-evaluation-stage">&#x1F4AF; Soring for Evaluation Stage</h2>
 <blockquote>
-<p>Each contestant&#x2019;s model will be scored based on the classification accuracy</p>
+<p>Each team&apos;s model will be scored based on the accuracy score and explainable score.</p>
 </blockquote>
-<p>There are two evaluation tasks to be completed, namely the <strong>accuracy and explainable tasks</strong>. To rank higher in the leaderboard, teams are encouraged to design the model to maximize individual value. This part of the explanation will introduce the classification evaluation formula.</p>
+<p>There are two evaluation tasks to be completed, namely the <strong>accuracy and explainable.</strong> To rank higher in the leaderboard, teams are encouraged to design the model to maximize individual value. This part of the explanation will introduce the classification evaluation formula.</p>
 <p>Check out your leaderboard now!! &#x27A1;</p>
 <h2 id="&#x1F3AF;-accuracy">&#x1F3AF; Accuracy</h2>
-<p>The accuracy task is a computation based on the <strong>localization and classification operations</strong>. The Accuracy Score is the classification score on the <strong><code>dataset_3</code></strong>.</p>
+<p>The accuracy task is a computation based on the <strong>localization and classification operations</strong>. The Accuracy Score is the classification score on the evaluation dataset.</p>
 <h3 id="intersection-over-prediction-iop">Intersection over Prediction, IoP</h3>
 <p>To evaluate the accuracy for identifying the position of each malignant cell. Contestants are expected to annotate the position of each malignant cell on the pathological images using bounding boxes. The Intersection over Prediction (IoP) will be used in the evaluation of the classification score.</p>
-<p><script type="math/tex; mode=display">
+<p><script type="math/tex; ">
 IoP = \frac{\text{area over intersection}}{\text{area of prediction}} = \frac{T \cap P}
 {P}\\\\\\ T = \text{area of ground truth bounding box region}\\\\\\ P = \text{area of predicted bounding box region}
 </script></p>
@@ -444,26 +443,26 @@ IoP = \frac{\text{area over intersection}}{\text{area of prediction}} = \frac{T 
 <p>Each bounding box is considered correct when the <strong>maximum IoP with any ground truth bounding boxes is more significant than 0.5</strong><a href="evaluation-criteria.html">[2]</a>. Each class&apos;s recall values can be calculated to construct a recall vs false positive (per image) graph for every level. The precise method for calculating the recall and false positives is in the appendix.</p>
 <p>The <strong>FROC</strong> is calculated as the <strong>average value of recall values for false positives (per image)</strong> (at &#xBC; , &#xBD;, 1, 2, 4, 8). Linear interpolation will be applied to determine the recall value for false positive, for value out of bound, the most recent maximum recall value will be used for interpolation.</p>
 <p>The average recall value can then be calculated along the false positive (per image) axis. The mean FROC value of each class will be the final value of the classification score.</p>
-<p><script type="math/tex; mode=display">
+<p><script type="math/tex; ">
 \text{Classification Score} = \frac{1}{|M|}\sum_{i \in M}{\text{FROC}_i}
 </script></p>
-<p>Where M, refers to the classes.</p>
+<p>where <em>M</em>, refers to the classes.</p>
 <blockquote>
-<p>Given that each ground truth box can only pair with one prediction box, and the prediction box will always pair with one of the IoP maxima to the ground truth box if the ground truth box is taken; this prediction is ignored, ie. Not considered as a <em>false positive</em></p>
+<p>Given that each ground truth box can only pair with one prediction box, and the prediction box will always pair with one of the IoP maxima to the ground truth box if the ground truth box is taken; this prediction is ignored, ie. Not considered as a <em>false positive.</em></p>
 </blockquote>
 <h2 id="&#x1F4C8;-explainable-xai">&#x1F4C8; Explainable (XAI)</h2>
-<p>The task is based on the output of a saliency map; In the <strong><code>dataset_3</code></strong> there are masks for the labels, which highlight specific importances of the images. Your goal is to create a saliency map to be scored with the masks. There is no dataset provided for you to optimize the explainable score because this is based on the model&#x2019;s performance.</p>
-<p>MindSpore provides an interesting toolkit called <a href="https://www.mindspore.cn/doc/api_python/zh-CN/r1.2/mindspore/mindspore.explainer.html%20" target="_blank"><strong><code>mindspore.explainer</code></strong></a>which accepts a model and outputs a saliency map. You need to utilize this toolkit and return the saliency map in the evaluation task.</p>
+<p>The task is based on the output of a saliency map; In the evaluation dataset, there are masks for the labels, which highlight specific importance of the images. Your goal is to create a saliency map to be scored with the masks. There is no dataset provided for you to optimize the explainable score because this is based on the model&#x2019;s performance.</p>
+<p>MindSpore provides an interesting toolkit called <a href="https://www.mindspore.cn/doc/api_python/zh-CN/r1.2/mindspore/mindspore.explainer.html%20" target="_blank"><strong><code>mindspore.explainer</code></strong></a> which accepts a model and outputs a saliency map. You need to utilize this toolkit and return the saliency map in the evaluation task.</p>
 <p>If you have successfully completed the requirements we will score your result against the masks of the images with the <a href="https://towardsdatascience.com/understanding-auc-roc-curve-68b2303cc9c5%20" target="_blank">AUC - ROC Curve formula</a>.</p>
-<h3 id="mindspore-explainer"><a href="https://www.mindspore.cn/doc/api\_python/zh-CN/r1.2/mindspore/mindspore.explainer.html" target="_blank">Mindspore Explainer</a></h3>
+<h3 id="mindspore-explainer"><a href="https://www.mindspore.cn/doc/api_python/en/r1.2/mindspore/mindspore.explainer.html" target="_blank">MindSpore Explainer</a></h3>
 <h2 id="&#x1F3C5;-final-score">&#x1F3C5; Final Score</h2>
 <p>The final ranking is measured with the combination of both tasks</p>
-<p><script type="math/tex; mode=display">
+<p><script type="math/tex; ">
 \text{Final Score} = \text{Accuracy Score} * 0.8 + \text{Explainable Score} *0.2
 </script></p>
 <h3 id="scoring-for-final-round">Scoring for Final Round</h3>
-<p>The <strong>top 6 teams in the Qualification Round</strong> will be selected to participate in the <strong>Final Pitching</strong>.</p>
-<p>Each contestant of the final round is to present the following details for their project. The following structure is a reference for the contestants; participants are free to structure their presentations. The time for the presentation is 20 mins. Pitching for 15 minutes and a Q&amp;A session for 5 minutes.</p>
+<p>The <strong>top 6 teams in the Evaluation Stage</strong> will be selected to participate in the <strong>Final Pitching</strong>.</p>
+<p>Each team of the final round is to present the following details for their project. The following structure is a reference for the contestants; participants are free to structure their presentations. The time for the presentation is 20 mins. Pitching for 15 minutes and a Q&amp;A session for 5 minutes.</p>
 <table>
 <thead>
 <tr>
@@ -518,7 +517,7 @@ IoP = \frac{\text{area over intersection}}{\text{area of prediction}} = \frac{T 
 </tr>
 </tbody>
 </table>
-<p>*If there is more than one team with the same score in the qualification round in the top 6 ranks, both teams will qualify for the final round.</p>
+<p>*If there is more than one team with the same score in the evaluation stage in the top 6 ranks, both teams will be qualified for the final pitching.</p>
 <h2 id="&#x1F469;&#x2696;-judging-criteria">&#x1F469;&#x2696; Judging Criteria</h2>
 <p>Scoring will be given to the participants based on the following criteria:</p>
 <table>
@@ -590,7 +589,7 @@ IoP = \frac{\text{area over intersection}}{\text{area of prediction}} = \frac{T 
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Evaluation Criteria","level":"2.1.7","depth":2,"next":{"title":"Submission Detail","level":"2.1.8","depth":2,"path":"rules/rules/submission-detail.md","ref":"rules/rules/submission-detail.md","articles":[]},"previous":{"title":"Data","level":"2.1.6","depth":2,"path":"rules/rules/data.md","ref":"rules/rules/data.md","articles":[]},"dir":"ltr"},"config":{"plugins":["mathjax-pro","-fontsettings"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"mathjax-pro":{"forceSVG":false,"version":"2.7.7"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"MindSpore Challenge 2021","gitbook":"*","description":null,"extension":null},"file":{"path":"rules/rules/evaluation-criteria.md","mtime":"2021-08-31T08:02:16.456Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-08-31T08:04:12.379Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Evaluation Criteria","level":"2.1.7","depth":2,"next":{"title":"Submission Detail","level":"2.1.8","depth":2,"path":"rules/rules/submission-detail.md","ref":"rules/rules/submission-detail.md","articles":[]},"previous":{"title":"Data","level":"2.1.6","depth":2,"path":"rules/rules/data.md","ref":"rules/rules/data.md","articles":[]},"dir":"ltr"},"config":{"plugins":["mathjax-pro","-fontsettings"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"mathjax-pro":{"forceSVG":false,"version":"2.7.7"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"MindSpore Challenge 2021","gitbook":"*","description":null,"extension":null},"file":{"path":"rules/rules/evaluation-criteria.md","mtime":"2021-09-02T16:14:19.103Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-09-03T07:03:00.826Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
