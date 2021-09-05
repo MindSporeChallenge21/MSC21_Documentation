@@ -132,5 +132,5 @@ Commercial purposes include, but are not limited to:
 3. Selling a subset of data or the preprocessed forms of data from the dataset.
 4. Creating military applications.
 
-The **LBP Medicine** reserves the right to modify and change this dataset and the section Dataset Terms and Conditions in this Rule Book and Guidelines for MindSpore Challenge - Pathology Diagnosis . This dataset comes without any warranty, and LBP Medicine cannot be held accountable for any damage \(physical, financial, or otherwise\) caused by the use of this dataset.
+The **LBP Medicine** reserves the right to modify and change this dataset and the section Dataset Terms and Conditions in this Rule Book and Guidelines for MindSpore Challenge - Pathology Diagnosis. This dataset comes without any warranty, and LBP Medicine cannot be held accountable for any damage \(physical, financial, or otherwise\) caused by the use of this dataset.
 

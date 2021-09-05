@@ -350,3 +350,11 @@ If participants successfully entered the Final Pitching, participants are requir
 
 All submissions must be derived from participants' work, and any use of code from other parties that are not of team members required a citation. The authority should also be added to the presentation for the final round.
 
+## Other terms
+
+Contestants retain sole ownership of their original work. The submission remains the intellectual property of the contestant, and the organizers make no claim of copyright as to the work of any individual who enters the contest.  All the submitted materials are sole to be used within this competition.
+
+The contestant specifically agrees to give the organizers permission to use all content submitted for purposes of judging the contest.  Finalists and/or winners will be required to grant the organizers, with proper attribution through whatever means they deem appropriate, a worldwide, non-exclusive, royalty-free, sub-licensable and transferable license to use, reproduce, distribute, prepare derivative works of, and/or display the submission in any media formats and through any media channels in perpetuity in connection with the activities and operations of the contest. Each finalist and/or winner represents and warrants that he or she has the unrestricted right to grant such license.
+
+As a condition of entering the Final Pitching and/or receipt of the prize, finalists and/or winners must deliver to the organizers the final model’s software code as used to generate the winning Submission and associated documentation. The delivered software code must be capable of generating the winning Submission and contain a description of resources required to build and/or run the executable code successfully.
+
