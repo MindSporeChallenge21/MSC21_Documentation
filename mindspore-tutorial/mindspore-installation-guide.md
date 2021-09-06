@@ -135,7 +135,7 @@ pip3 install https://ms-release.obs.cn-north-4.myhuaweicloud.com/1.2.0/MindSpore
 
 \* if its related to permission errors, use add `--user` flag to install into current user dir
 
-### Verfiy Installation
+### Verifiy Installation
 
 You can verify installation by running the command of `python3 -c "import mindspore;print(mindspore.__version__)"` The result should be 1.2.1
 

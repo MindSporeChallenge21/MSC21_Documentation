@@ -11,7 +11,7 @@ The “**juries**” consist of:
 
 And prominent figures in academic and medical research are in charge of enforcing the Terms and the Rules concerning the Contest. The Jury will review the submissions and pitching of each Team, perform scoring and ranking of the competition. At its sole discretion, the Jury may decide to disqualify participants or teams who do not follow the Terms or the Rules.
 
-## 💯 Soring for Evaluation Stage
+## 💯 Evaluation Stage
 
 > Each team's model will be scored based on the accuracy score and explainable score.
 
@@ -19,11 +19,11 @@ There are two evaluation tasks to be completed, namely the **accuracy and explai
 
 Check out your leaderboard now!! ➡
 
-## 🎯 Accuracy
+### 🎯 Accuracy
 
 The accuracy task is a computation based on the **localization and classification operations**. The Accuracy Score is the classification score on the evaluation dataset.
 
-### Intersection over Prediction, IoP
+#### Intersection over Prediction, IoP
 
 To evaluate the accuracy for identifying the position of each malignant cell. Contestants are expected to annotate the position of each malignant cell on the pathological images using bounding boxes. The Intersection over Prediction \(IoP\) will be used in the evaluation of the classification score.
 
@@ -36,9 +36,9 @@ The example below shows the images of IoP:
 
 | IoP=1 | IoP=0.6 | Multiple Io |
 | :--- | :--- | :--- |
-| ![](../../.gitbook/assets/5.png) | ![](../../.gitbook/assets/7%20%281%29%20%282%29%20%281%29.png) | ![](../../.gitbook/assets/6%20%281%29%20%282%29.png) |
+| ![](../../.gitbook/assets/5.png) | ![](../../.gitbook/assets/7%20%281%29%20%282%29%20%282%29%20%281%29.png) | ![](../../.gitbook/assets/6%20%281%29%20%282%29%20%282%29.png) |
 
-### Classification
+#### Classification
 
 This challenge uses the **Free-response Receiver Operating Characteristic \(FROC\) at IoP &gt; 0.5**
 
@@ -56,7 +56,7 @@ where _M_, refers to the classes.
 
 > Given that each ground truth box can only pair with one prediction box, and the prediction box will always pair with one of the IoP maxima to the ground truth box if the ground truth box is taken; this prediction is ignored, ie. Not considered as a _false positive._
 
-## 📈 Explainable \(XAI\)
+### 📈 Explainable \(XAI\)
 
 The task is based on the output of a saliency map; In the evaluation dataset, there are masks for the labels, which highlight specific importance of the images. Your goal is to create a saliency map to be scored with the masks. There is no dataset provided for you to optimize the explainable score because this is based on the model’s performance.
 
@@ -66,19 +66,19 @@ If you have successfully completed the requirements we will score your result ag
 
 ### [MindSpore Explainer](https://www.mindspore.cn/doc/api_python/en/r1.2/mindspore/mindspore.explainer.html)
 
-## 🏅 Final Score
+### 🏅 Final Score in Model Evaluation
 
-The final ranking is measured with the combination of both tasks
+The model's final score ranking is measured with the combination of both accuracy and explainable tasks
 
 $$
 \text{Final Score} = \text{Accuracy Score} * 0.8 + \text{Explainable Score} *0.2
 $$
 
-### Scoring for Final Round
+##  👩🏫 Final Pitching
 
 The **top 6 teams in the Evaluation Stage** will be selected to participate in the **Final Pitching**.
 
-Each team of the final round is to present the following details for their project. The following structure is a reference for the contestants; participants are free to structure their presentations. The time for the presentation is 20 mins. Pitching for 15 minutes and a Q&A session for 5 minutes.
+Each team in the final pitching is invited to present the following details for their projects. The following structure is a reference for the contestants; participants are free to structure their presentations. The time for the presentation is 20 mins. Pitching for 15 minutes and a Q&A session for 5 minutes.
 
 | **Details** | **Description** |
 | :--- | :--- |
@@ -96,7 +96,7 @@ Each team of the final round is to present the following details for their proje
 
 \*If there is more than one team with the same score in the evaluation stage in the top 6 ranks, both teams will be qualified for the final pitching.
 
-## 👩⚖ Judging Criteria
+### 👩⚖ Judging Criteria
 
 Scoring will be given to the participants based on the following criteria:
 
