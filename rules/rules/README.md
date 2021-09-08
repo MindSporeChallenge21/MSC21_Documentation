@@ -2,7 +2,9 @@
 
 ## Introduction
 
-**MindSpore** is an AI computing framework. Fully developed by Huawei from the ground up, it implements on-demand collaboration across cloud-edge devices. It provides unified APIs and end-to-end AI capabilities for model development, execution, and deployment in all scenarios. Using a distributed architecture, MindSpore leverages a native differentiable programming paradigm and new AI native execution modes to achieve better resource efficiency, security, and trustworthiness. Meanwhile, MindSpore makes full use of the computing power of **Ascend AI processors** and lowers the entry requirements of industry AI development, bringing inclusive AI faster to reality.
+**MindSpore** is an AI computing framework. Fully developed by Huawei from the ground up, it implements on-demand collaboration across cloud-edge devices. 
+
+It provides unified APIs and end-to-end AI capabilities for model development, execution, and deployment in all scenarios. Using a distributed architecture, MindSpore leverages a native differentiable programming paradigm and new AI native execution modes to achieve better resource efficiency, security, and trustworthiness. Meanwhile, MindSpore makes full use of the computing power of **Ascend AI processors** and lowers the entry requirements of industry AI development, bringing inclusive AI faster to reality.
 
 **Huawei Cloud’s ModelArts** is a one-stop AI development platform that enables developers and data scientists of any skill level to rapidly build, train, and deploy models anywhere, from the cloud to the edge.
 
@@ -20,7 +22,7 @@ Contestants are expected to train their model with MindSpore to localize and cla
 
 Any decision or determination by any contest administrator or judge, including the interpretation and application of the Terms and Rules, shall be final and binding in all matters relating to such contest \(without prejudice to any legal claims you may have under applicable law\).
 
-Unless you agree to these Terms and Applicable Rules, you \(1\) may not enter the contest and the workshops, and you \(2\) are not eligible to receive any contest prize.
+Unless you agree to these Terms and Applicable Rules, you \(1\) shall not enter the contest and the workshops, and you \(2\) are not eligible to receive any contest prize.
 
 The words "include" and "including" as used in these Terms and any Rules mean "including but not limited to." The abbreviation "Huawei HKRC" refers to the "Huawei Hong Kong Research Center", "HKSTP" refers to the "Hong Kong Science and Technology Park Corp.", and "LBP Medicine" refers to the "Guangzhou AnBiPing \(LBP\) Medicine Sci. & Tech".
 

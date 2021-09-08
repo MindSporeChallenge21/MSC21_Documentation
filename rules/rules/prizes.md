@@ -43,5 +43,5 @@ The organizers will not be responsible for any failure in the efforts to notify 
 
 1. No express or implied warranties are made concerning the prize unless required by law.
 2. The organizers may offer alternative prizes of equal or greater value ensuring the law, or where all or part of the prize is unavailable.
-3. The organizers may work with an authorized third party to transfer the prize to your local bank account. You understand that to convert any cash prize into a non-Hong Kong currency, the organizers have the sole right to choose which currency exchange rate to apply.
+3. The organizers may work with an authorized third party to transfer the prize to your local bank account. You understand that if it is required to convert any cash prize into a non-Hong Kong currency, the organizers have the sole right to choose which currency exchange rate to apply.
 
