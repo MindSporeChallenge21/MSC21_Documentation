@@ -22,7 +22,7 @@ Contestants are expected to train their model with MindSpore to localize and cla
 
 Any decision or determination by any contest administrator or judge, including the interpretation and application of the Terms and Rules, shall be final and binding in all matters relating to such contest \(without prejudice to any legal claims you may have under applicable law\).
 
-Unless you agree to these Terms and Applicable Rules, you \(1\) may not enter the contest and the workshops, and you \(2\) are not eligible to receive any contest prize.
+Unless you agree to these Terms and Applicable Rules, you \(1\) shall not enter the contest and the workshops, and you \(2\) are not eligible to receive any contest prize.
 
 The words "include" and "including" as used in these Terms and any Rules mean "including but not limited to." The abbreviation "Huawei HKRC" refers to the "Huawei Hong Kong Research Center", "HKSTP" refers to the "Hong Kong Science and Technology Park Corp.", and "LBP Medicine" refers to the "Guangzhou AnBiPing \(LBP\) Medicine Sci. & Tech".
 

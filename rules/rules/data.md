@@ -121,7 +121,7 @@ Contestants are expected to design a model for finding the bounding boxes for th
 > 3. The use of the photos must abide by the Term of service of **LBP Medicine**.
 > 4. **LBP Medicine** guarantees that the data required in this competition are obtained through legal channels.
 
-By participating in this competition, contestants are allowed to access this dataset. There is some limitation in the use of this dataset. **The users may only use this dataset within the competition**. Within this competition, the definition of any code or software that accesses this dataset or reads this dataset in any manner must be part of the research or experimentation related to producing a model for this competition. The use of this dataset in the commercial context is **prohibited**.
+By participating in this competition, contestants are allowed to access this dataset. There is some limitation in the use of this dataset. **The users shall only use this dataset within the competition**. Within this competition, the definition of any code or software that accesses this dataset or reads this dataset in any manner must be part of the research or experimentation related to producing a model for this competition. The use of this dataset in the commercial context is **prohibited**.
 
 > The contestants accept full responsibility for the use of the dataset, including but not limited to the use of any copies of images that they may create from the dataset.
 
