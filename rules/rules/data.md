@@ -48,11 +48,11 @@ A further description of the labels is in the [Dataset Description Section](data
 
 > The data \(**`dataset_2`**\) can be obtained through ModelArts Moxing Framework only. From Huawei Cloud's OBS Bucket
 
-dataset obs path: 
+dataset obs path:
 
 > obs://msc21-dataset2/
 
-In the **dataset\_2** there are 3000 images, a CSV label file, and a metadata CSV file.  
+In the **dataset\_2** there are 3000 images, a CSV label file, and a metadata CSV file.
 
 A further description of the labels is in the [Dataset Description Section](data.md#dataset-description). Since you can only access the dataset through **Moxing Framework** in **ModelArts**, we highly encourage participants to use ModelArts for model training, because it is faster and more efficient for experimentation.
 

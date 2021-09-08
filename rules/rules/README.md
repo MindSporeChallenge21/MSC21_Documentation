@@ -2,7 +2,9 @@
 
 ## Introduction
 
-**MindSpore** is an AI computing framework. Fully developed by Huawei from the ground up, it implements on-demand collaboration across cloud-edge devices. It provides unified APIs and end-to-end AI capabilities for model development, execution, and deployment in all scenarios. Using a distributed architecture, MindSpore leverages a native differentiable programming paradigm and new AI native execution modes to achieve better resource efficiency, security, and trustworthiness. Meanwhile, MindSpore makes full use of the computing power of **Ascend AI processors** and lowers the entry requirements of industry AI development, bringing inclusive AI faster to reality.
+**MindSpore** is an AI computing framework. Fully developed by Huawei from the ground up, it implements on-demand collaboration across cloud-edge devices. 
+
+It provides unified APIs and end-to-end AI capabilities for model development, execution, and deployment in all scenarios. Using a distributed architecture, MindSpore leverages a native differentiable programming paradigm and new AI native execution modes to achieve better resource efficiency, security, and trustworthiness. Meanwhile, MindSpore makes full use of the computing power of **Ascend AI processors** and lowers the entry requirements of industry AI development, bringing inclusive AI faster to reality.
 
 **Huawei Cloud’s ModelArts** is a one-stop AI development platform that enables developers and data scientists of any skill level to rapidly build, train, and deploy models anywhere, from the cloud to the edge.
 

@@ -74,7 +74,7 @@ $$
 \text{Final Score} = \text{Accuracy Score} * 0.8 + \text{Explainable Score} *0.2
 $$
 
-##  👩🏫 Final Pitching
+## 👩🏫 Final Pitching
 
 The **top 6 teams in the Evaluation Stage** will be selected to participate in the **Final Pitching**.
 
