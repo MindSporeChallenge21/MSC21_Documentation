@@ -18,7 +18,7 @@ description: >-
 2. [Mindspore Installation Guideline](mindspore-tutorial/mindspore-installation-guide.md)
 3. [Mindspore Tutorial Notebook](https://github.com/MindSporeChallenge21/resources/tree/main/notebook)
 4. [Training & Testing Guideline](training-and-testing/traintest.md)
-5. [Rule Book & Guidelines](rules/rules/)
+5. [Rule Book & Guidelines](rules/rules/#introduction)
 
 ## 🖇 Useful Links
 
