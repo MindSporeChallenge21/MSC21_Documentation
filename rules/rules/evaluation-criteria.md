@@ -4,12 +4,7 @@
 
 There are two stages in this competition: the **Evaluation Stage** and the **Final Pitching**. In the final pitching, there will be judges from different academic backgrounds. Participants are expected to show maturity in the design of their algorithms, neural network, and describe their methodology.
 
-The “**juries**” consist of:
-
-* Huawei 
-* HKSTP
-
-And prominent figures in academic and medical research are in charge of enforcing the Terms and the Rules concerning the Contest. The Jury will review the submissions and pitching of each Team, perform scoring and ranking of the competition. At its sole discretion, the Jury may decide to disqualify participants or teams who do not follow the Terms or the Rules.
+The Jury, consisting of experts from Huawei, HKSTP, and prominent academic and medical research figures, is enforcing the Terms and the Rules concerning the Contest. The Jury will review the submissions and pitching of each team, perform scoring and ranking of the competition. At its sole discretion, the Jury may decide to disqualify participants or teams who do not follow the Terms or the Rules.
 
 ## 💯 Evaluation Stage
 
@@ -60,11 +55,11 @@ where _M_, refers to the classes.
 
 The task is based on the output of a saliency map; In the evaluation dataset, there are masks for the labels, which highlight specific importance of the images. Your goal is to create a saliency map to be scored with the masks. There is no dataset provided for you to optimize the explainable score because this is based on the model’s performance.
 
-MindSpore provides an interesting toolkit called [**`mindspore.explainer`**](https://www.mindspore.cn/doc/api_python/zh-CN/r1.2/mindspore/mindspore.explainer.html%20) which accepts a model and outputs a saliency map. You need to utilize this toolkit and return the saliency map in the evaluation task.
+MindSpore provides an interesting toolkit called [**`mindspore.explainer`**](https://www.mindspore.cn/docs/api/en/r1.3/api_python/mindspore.explainer.html) which accepts a model and outputs a saliency map. You need to utilize this toolkit and return the saliency map in the evaluation task.
 
 If you have successfully completed the requirements we will score your result against the masks of the images with the [AUC - ROC Curve formula](https://towardsdatascience.com/understanding-auc-roc-curve-68b2303cc9c5%20).
 
-### [MindSpore Explainer](https://www.mindspore.cn/doc/api_python/en/r1.2/mindspore/mindspore.explainer.html)
+### [MindSpore Explainer](https://www.mindspore.cn/docs/api/en/r1.3/api_python/mindspore.explainer.html)
 
 ### 🏅 Final Score in Model Evaluation
 

@@ -1,8 +1,8 @@
 # Programming Environment
 
-**Python 3.7.5** and **MindSpore 1.2.0** versions are the only versions where the evaluation queue accepts.
+**Python 3.7.5** and **MindSpore 1.3.0** versions are the only versions where the evaluation queue accepts.
 
-[MindSpore version 1.2.0](https://mindspore.cn/doc/api_python/zh-CN/r1.2/index.html) is the main library used for this competition, and the participants are required to use MindSpore as the development tool for designing their models. MindSpore contains a fully-fledged neural network toolkit for users to develop their model.
+[MindSpore version 1.3.0](https://www.mindspore.cn/docs/api/en/r1.3/index.html) is the main library used for this competition, and the participants are required to use MindSpore as the development tool for designing their models. MindSpore contains a fully-fledged neural network toolkit for users to develop their model.
 
 > All the models needed to be written with the **provided APIs in MindSpore** to be marked as **completed**.
 
