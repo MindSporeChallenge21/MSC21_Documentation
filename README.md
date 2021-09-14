@@ -14,11 +14,10 @@ description: >-
 
 ## 📃 Useful Resources
 
-1. [MSC21 overview briefing](./)
-2. [Mindspore Installation Guideline](mindspore-tutorial/mindspore-installation-guide.md)
-3. [Mindspore Tutorial Notebook](https://github.com/MindSporeChallenge21/resources/tree/main/notebook)
-4. [Training & Testing Guideline](training-and-testing/traintest.md)
-5. [Rule Book & Guidelines](https://mindsporechallenge21.github.io/MSC21_Documentation/rules/rules/index.html)
+1. [Rule Book & Guidelines](https://mindsporechallenge21.github.io/MSC21_Documentation/rules/rules/index.html)
+2. [Training & Testing Guideline](training-and-testing/traintest.md)
+3. [Mindspore Installation Guideline](mindspore-tutorial/mindspore-installation-guide.md)
+4. [Mindspore Tutorial Notebook](https://github.com/MindSporeChallenge21/resources/tree/main/notebook)
 
 ## 🖇 Useful Links
 
