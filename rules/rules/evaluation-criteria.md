@@ -53,7 +53,7 @@ where _M_, refers to the classes.
 
 ### 📈 Explainable \(XAI\)
 
-The task is based on the output of a saliency map; In the evaluation dataset, there are masks for the labels, which highlight specific importance of the images. Your goal is to create a saliency map to be scored with the masks. There is no dataset provided for you to optimize the explainable score because this is based on the model’s performance.
+The task is based on the output of a saliency map; In the evaluation dataset, there are masks for the labels, which highlight the specific importance of the images. Your goal is to create a saliency map to be scored with the masks. There is no dataset provided for you to optimize the explainable score because this is based on the model’s performance.
 
 MindSpore provides an interesting toolkit called [**`mindspore.explainer`**](https://www.mindspore.cn/docs/api/en/r1.3/api_python/mindspore.explainer.html) which accepts a model and outputs a saliency map. You need to utilize this toolkit and return the saliency map in the evaluation task.
 
